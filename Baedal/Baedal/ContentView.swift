@@ -2,7 +2,7 @@ import SwiftUI
 
 struct ContentView: View {
     @State var isAddressView : Bool = true;
-    let MenuButton = [" 배민1 ", " 배달 ", " 포장 ", " B마트 ", " 배민스토어 ", " 쇼핑라이브 ", " 선물하기 ", " 전국별미 "]
+    let ToolBarButton = [" 배민1 ", " 배달 ", " 포장 ", " B마트 ", " 배민스토어 ", " 쇼핑라이브 ", " 선물하기 ", " 전국별미 "]
     @State var buttonSelected: Int = 1
     
     var body: some View{
@@ -16,21 +16,25 @@ struct ContentView: View {
             }
         NavigationView{
             NavigationView{
-                VStack{
-                    BannerView()
-                    RecommendView()
+                ScrollView(.vertical, showsIndicators: true){
+                    VStack{
+                        VStack(spacing : 0){
+                            BannerView()
+                            RecommendView()
+                            MenuView()
+                        }
                         .frame(alignment: .leading)
                         .toolbar{
                             ToolbarItemGroup(placement: .navigationBarLeading){
                                 ScrollView(.horizontal, showsIndicators: false){
                                     HStack{
-                                        ForEach(0..<MenuButton.count){ button in
-                                            NavigationLink(destination: Text(MenuButton[button])){
+                                        ForEach(0..<ToolBarButton.count){ button in
+                                            NavigationLink(destination: Text(ToolBarButton[button])){
                                                 Button(action: {
                                                     self.buttonSelected = button
                                                     print("hello!")
                                                 }){
-                                                    Text(MenuButton[button])
+                                                    Text(ToolBarButton[button])
                                                 }
                                                 .foregroundColor(self.buttonSelected == button ? .white : .gray)
                                                 .padding(.all, 9.0)
@@ -39,6 +43,7 @@ struct ContentView: View {
                                             }
                                         }
                                     }
+                                    
                                 }
                             }
                             ToolbarItemGroup(placement: .bottomBar){
@@ -47,50 +52,45 @@ struct ContentView: View {
                                         HStack(alignment: .top) {
                                             Button(action: {print("baemin1")}){
                                                 Image("검색")
-                                                    .resizable()
-                                                    .aspectRatio(contentMode : .fit)
                                             }
                                             Spacer()
                                             Button(action: {print("baemin1")}){
                                                 Image("찜")
-                                                    .resizable()
-                                                    .aspectRatio(contentMode : .fit)
                                             }
                                             Spacer()
                                                 .frame(width: 100)
                                             Button(action: {print("baemin1")}){
                                                 Image("주문내역")
-                                                    .resizable()
-                                                    .aspectRatio(contentMode : .fit)
                                             }
                                             Spacer()
                                             Button(action: {print("baemin1")}){
                                                 Image("my배민")
-                                                    .resizable()
-                                                    .aspectRatio(contentMode : .fit)
                                             }
                                         }
                                         .padding(.bottom, 50)
                                     }
-                                    .padding([.leading, .trailing], 24.0)
-                                    .frame(height: 109.0)
+                                    .padding([.leading, .trailing], 30.0)
+                                    .frame(  height: 112.0)
                                     .background(RoundedRectangle(cornerRadius: 20).fill(.white))
                                     .clipped()
                                     .shadow(radius: 20, y: 18)
                                     Button(action: {print("baemin1")}){
                                         Image("배민")
                                             .resizable()
-                                            .frame(width: 70, height: 70)
+                                            .frame(width: 60, height: 60)
                                             .clipShape(/*@START_MENU_TOKEN@*/Circle()/*@END_MENU_TOKEN@*/)
                                             .aspectRatio(contentMode : .fill)
                                             .shadow(radius: 1, x: 2, y: 2)
                                     }
-                                    .padding(.bottom, 50.0)
+                                    .padding(.bottom, 60.0)
                                 }
                             }
                         }
+                        
+                    }
+                    .gesture(drag)
+                    .background(Color("lightGrey"))
                 }
-                .gesture(drag)
             }
             .toolbar{
                 ToolbarItem(placement : .navigationBarLeading){
@@ -109,7 +109,7 @@ struct ContentView: View {
                             .foregroundColor(.black)
                             Spacer()
                         }
-                        .frame(width: UIScreen.main.bounds.size.width)
+                        .frame(width: UIScreen.main.bounds.size.width, height : 10)
                     }
                 }
             }

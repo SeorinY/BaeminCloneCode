@@ -24,6 +24,7 @@ struct RecommendView: View {
             .padding(.all, 10.0)
         }
         .frame(alignment: .leading)
+        .background(Color.white)
     }
 }
 
