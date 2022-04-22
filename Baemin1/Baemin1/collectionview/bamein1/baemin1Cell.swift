@@ -8,5 +8,8 @@
 import UIKit
 
 class baemin1Cell: UICollectionViewCell {
-    
+    let baemin1CollectionView: UICollectionView = {
+        let collectionView = UICollectionView()
+        return collectionView
+    }()
 }

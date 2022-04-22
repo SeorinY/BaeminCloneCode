@@ -8,6 +8,9 @@
 
 /* Begin PBXBuildFile section */
 		3A93B2D128106A1400D7F4F5 /* TabBarController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3A93B2D028106A1400D7F4F5 /* TabBarController.swift */; };
+		3AF7E78C281295D500C3A1B5 /* MainHeader.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3AF7E78B281295D500C3A1B5 /* MainHeader.swift */; };
+		3AF7E78E2812975400C3A1B5 /* MainHeaderCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3AF7E78D2812975400C3A1B5 /* MainHeaderCell.swift */; };
+		3AF7E7902812BF6A00C3A1B5 /* Stack.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3AF7E78F2812BF6A00C3A1B5 /* Stack.swift */; };
 		3AFB1F84281170810065621D /* BannerCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3AFB1F83281170810065621D /* BannerCell.swift */; };
 		3AFB1F86281170900065621D /* MenuCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3AFB1F85281170900065621D /* MenuCell.swift */; };
 		3AFB1F882811709C0065621D /* BestCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3AFB1F872811709C0065621D /* BestCell.swift */; };
@@ -23,6 +26,9 @@
 
 /* Begin PBXFileReference section */
 		3A93B2D028106A1400D7F4F5 /* TabBarController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TabBarController.swift; sourceTree = "<group>"; };
+		3AF7E78B281295D500C3A1B5 /* MainHeader.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainHeader.swift; sourceTree = "<group>"; };
+		3AF7E78D2812975400C3A1B5 /* MainHeaderCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainHeaderCell.swift; sourceTree = "<group>"; };
+		3AF7E78F2812BF6A00C3A1B5 /* Stack.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Stack.swift; sourceTree = "<group>"; };
 		3AFB1F83281170810065621D /* BannerCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BannerCell.swift; sourceTree = "<group>"; };
 		3AFB1F85281170900065621D /* MenuCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MenuCell.swift; sourceTree = "<group>"; };
 		3AFB1F872811709C0065621D /* BestCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BestCell.swift; sourceTree = "<group>"; };
@@ -104,6 +110,7 @@
 		52EF7A9A27FDADAA00FAB89F /* Baemin1 */ = {
 			isa = PBXGroup;
 			children = (
+				3AF7E78F2812BF6A00C3A1B5 /* Stack.swift */,
 				3AFB1F812811705A0065621D /* collectionview */,
 				52EF7A9B27FDADAA00FAB89F /* AppDelegate.swift */,
 				52EF7A9D27FDADAA00FAB89F /* SceneDelegate.swift */,
@@ -113,6 +120,8 @@
 				52EF7AA627FDADAC00FAB89F /* LaunchScreen.storyboard */,
 				52EF7AA927FDADAC00FAB89F /* Info.plist */,
 				3A93B2D028106A1400D7F4F5 /* TabBarController.swift */,
+				3AF7E78B281295D500C3A1B5 /* MainHeader.swift */,
+				3AF7E78D2812975400C3A1B5 /* MainHeaderCell.swift */,
 			);
 			path = Baemin1;
 			sourceTree = "<group>";
@@ -192,7 +201,10 @@
 				3AFB1F84281170810065621D /* BannerCell.swift in Sources */,
 				3AFB1F86281170900065621D /* MenuCell.swift in Sources */,
 				3AFB1F8F2811760F0065621D /* baemin1Cell.swift in Sources */,
+				3AF7E7902812BF6A00C3A1B5 /* Stack.swift in Sources */,
 				3A93B2D128106A1400D7F4F5 /* TabBarController.swift in Sources */,
+				3AF7E78C281295D500C3A1B5 /* MainHeader.swift in Sources */,
+				3AF7E78E2812975400C3A1B5 /* MainHeaderCell.swift in Sources */,
 				52EF7A9C27FDADAA00FAB89F /* AppDelegate.swift in Sources */,
 				3AFB1F882811709C0065621D /* BestCell.swift in Sources */,
 				52EF7A9E27FDADAA00FAB89F /* SceneDelegate.swift in Sources */,

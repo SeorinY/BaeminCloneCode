@@ -11,35 +11,6 @@
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
-        <!--Root View Controller-->
-        <scene sceneID="hJY-Pj-ZeH">
-            <objects>
-                <tableViewController id="iOY-qg-96N" sceneMemberID="viewController">
-                    <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="-1" estimatedSectionHeaderHeight="-1" sectionFooterHeight="-1" estimatedSectionFooterHeight="-1" id="xwf-mr-ZbA">
-                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
-                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
-                        <prototypes>
-                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" id="q9L-hB-V4B">
-                                <rect key="frame" x="0.0" y="44.5" width="414" height="43.5"/>
-                                <autoresizingMask key="autoresizingMask"/>
-                                <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="q9L-hB-V4B" id="a2c-vM-GC6">
-                                    <rect key="frame" x="0.0" y="0.0" width="414" height="43.5"/>
-                                    <autoresizingMask key="autoresizingMask"/>
-                                </tableViewCellContentView>
-                            </tableViewCell>
-                        </prototypes>
-                        <connections>
-                            <outlet property="dataSource" destination="iOY-qg-96N" id="gwJ-h6-erq"/>
-                            <outlet property="delegate" destination="iOY-qg-96N" id="g1s-wa-JDF"/>
-                        </connections>
-                    </tableView>
-                    <navigationItem key="navigationItem" title="Root View Controller" id="xLg-yf-23n"/>
-                </tableViewController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="SJb-ur-7ad" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
-            </objects>
-            <point key="canvasLocation" x="-1161" y="1377"/>
-        </scene>
         <!--Tab Bar Controller-->
         <scene sceneID="Smt-Oc-ANI">
             <objects>
@@ -184,78 +155,191 @@
         <!--위치-->
         <scene sceneID="WDQ-f0-X2h">
             <objects>
-                <viewController id="veU-zj-2lA" sceneMemberID="viewController">
+                <viewController id="veU-zj-2lA" customClass="ViewController" customModule="Baemin1" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="I5S-Nr-G9W">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="725"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <collectionView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" dataMode="prototypes" translatesAutoresizingMaskIntoConstraints="NO" id="9cE-t2-cqm">
-                                <rect key="frame" x="0.0" y="0.0" width="414" height="50"/>
-                                <color key="backgroundColor" systemColor="systemBackgroundColor"/>
-                                <constraints>
-                                    <constraint firstAttribute="height" constant="50" id="TeV-2I-JnP"/>
-                                </constraints>
-                                <collectionViewFlowLayout key="collectionViewLayout" automaticEstimatedItemSize="YES" minimumLineSpacing="10" minimumInteritemSpacing="10" id="ABC-3f-62x">
-                                    <size key="itemSize" width="413" height="51"/>
-                                    <size key="headerReferenceSize" width="0.0" height="0.0"/>
-                                    <size key="footerReferenceSize" width="0.0" height="0.0"/>
-                                    <inset key="sectionInset" minX="0.0" minY="0.0" maxX="0.0" maxY="0.0"/>
-                                </collectionViewFlowLayout>
-                                <cells>
-                                    <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" id="mHa-a6-Ike">
-                                        <rect key="frame" x="0.5" y="0.0" width="413" height="51"/>
-                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                        <collectionViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO" id="rDv-Qb-FVN">
-                                            <rect key="frame" x="0.0" y="0.0" width="413" height="51"/>
-                                            <autoresizingMask key="autoresizingMask"/>
-                                            <subviews>
-                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" text="Label" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="zVF-gp-KZE">
-                                                    <rect key="frame" x="15" y="15" width="59" height="21"/>
-                                                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                                    <nil key="textColor"/>
-                                                    <nil key="highlightedColor"/>
-                                                </label>
-                                            </subviews>
-                                            <constraints>
-                                                <constraint firstItem="zVF-gp-KZE" firstAttribute="centerY" secondItem="rDv-Qb-FVN" secondAttribute="centerY" id="Jnd-Fi-nLP"/>
-                                            </constraints>
-                                        </collectionViewCellContentView>
-                                        <size key="customSize" width="413" height="51"/>
-                                    </collectionViewCell>
-                                </cells>
-                            </collectionView>
                             <collectionView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" dataMode="prototypes" translatesAutoresizingMaskIntoConstraints="NO" id="huf-GG-5Z3">
-                                <rect key="frame" x="0.0" y="58" width="414" height="667"/>
+                                <rect key="frame" x="0.0" y="0.0" width="414" height="725"/>
                                 <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                                 <collectionViewFlowLayout key="collectionViewLayout" automaticEstimatedItemSize="YES" minimumLineSpacing="10" minimumInteritemSpacing="10" id="gDm-4o-Al0">
-                                    <size key="itemSize" width="390" height="661"/>
-                                    <size key="headerReferenceSize" width="0.0" height="0.0"/>
+                                    <size key="itemSize" width="413" height="675"/>
+                                    <size key="headerReferenceSize" width="50" height="50"/>
                                     <size key="footerReferenceSize" width="0.0" height="0.0"/>
                                     <inset key="sectionInset" minX="0.0" minY="0.0" maxX="0.0" maxY="0.0"/>
                                 </collectionViewFlowLayout>
                                 <cells>
-                                    <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" id="bcb-CP-aF0">
-                                        <rect key="frame" x="12" y="0.0" width="390" height="661"/>
+                                    <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" reuseIdentifier="mainCell" id="bcb-CP-aF0">
+                                        <rect key="frame" x="0.5" y="50" width="413" height="675"/>
                                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                         <collectionViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO" id="ezB-B3-upO">
-                                            <rect key="frame" x="0.0" y="0.0" width="390" height="661"/>
+                                            <rect key="frame" x="0.0" y="0.0" width="413" height="675"/>
                                             <autoresizingMask key="autoresizingMask"/>
                                         </collectionViewCellContentView>
-                                        <size key="customSize" width="390" height="661"/>
+                                        <size key="customSize" width="413" height="675"/>
                                     </collectionViewCell>
                                 </cells>
+                                <collectionReusableView key="sectionHeaderView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" reuseIdentifier="mainHeader" id="DIx-uw-eSS" customClass="MainHeader" customModule="Baemin1" customModuleProvider="target">
+                                    <rect key="frame" x="0.0" y="0.0" width="414" height="50"/>
+                                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                    <subviews>
+                                        <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" ambiguous="YES" placeholderIntrinsicWidth="1080" placeholderIntrinsicHeight="50" alwaysBounceHorizontal="YES" showsVerticalScrollIndicator="NO" translatesAutoresizingMaskIntoConstraints="NO" id="qBi-3N-XdB">
+                                            <rect key="frame" x="0.0" y="0.0" width="414" height="50"/>
+                                            <subviews>
+                                                <stackView autoresizesSubviews="NO" opaque="NO" contentMode="scaleToFill" placeholderIntrinsicWidth="1080" placeholderIntrinsicHeight="50" distribution="equalSpacing" translatesAutoresizingMaskIntoConstraints="NO" id="dhM-IW-SjJ" customClass="Stack" customModule="Baemin1" customModuleProvider="target">
+                                                    <rect key="frame" x="0.0" y="10" width="1080" height="30"/>
+                                                    <subviews>
+                                                        <button autoresizesSubviews="NO" opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="k58-e5-K9u">
+                                                            <rect key="frame" x="0.0" y="0.0" width="48.5" height="30"/>
+                                                            <color key="tintColor" systemColor="systemGray2Color"/>
+                                                            <state key="normal" title="Button"/>
+                                                            <buttonConfiguration key="configuration" style="plain" title="배민1" cornerStyle="capsule" buttonSize="small">
+                                                                <fontDescription key="titleFontDescription" type="system" pointSize="13"/>
+                                                                <directionalEdgeInsets key="contentInsets" top="0.0" leading="10" bottom="0.0" trailing="10"/>
+                                                            </buttonConfiguration>
+                                                            <connections>
+                                                                <action selector="clickButton:" destination="DIx-uw-eSS" eventType="touchDown" id="DU8-HP-Kiq"/>
+                                                            </connections>
+                                                        </button>
+                                                        <button opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Que-yS-1HD">
+                                                            <rect key="frame" x="136" y="0.0" width="42.5" height="30"/>
+                                                            <color key="tintColor" systemColor="systemGray2Color"/>
+                                                            <state key="normal" title="Button"/>
+                                                            <buttonConfiguration key="configuration" style="plain" title="배달" cornerStyle="capsule" buttonSize="small">
+                                                                <fontDescription key="titleFontDescription" type="system" pointSize="13"/>
+                                                                <directionalEdgeInsets key="contentInsets" top="0.0" leading="10" bottom="0.0" trailing="10"/>
+                                                            </buttonConfiguration>
+                                                            <connections>
+                                                                <action selector="clickButton:" destination="DIx-uw-eSS" eventType="touchDown" id="Onr-i0-6vd"/>
+                                                            </connections>
+                                                        </button>
+                                                        <button opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="8F3-7m-jDK">
+                                                            <rect key="frame" x="266" y="0.0" width="42.5" height="30"/>
+                                                            <color key="tintColor" systemColor="systemGray2Color"/>
+                                                            <state key="normal" title="Button"/>
+                                                            <buttonConfiguration key="configuration" style="plain" title="포장" cornerStyle="capsule" buttonSize="small">
+                                                                <fontDescription key="titleFontDescription" type="system" pointSize="13"/>
+                                                                <directionalEdgeInsets key="contentInsets" top="0.0" leading="10" bottom="0.0" trailing="10"/>
+                                                            </buttonConfiguration>
+                                                            <connections>
+                                                                <action selector="clickButton:" destination="DIx-uw-eSS" eventType="touchDown" id="Di0-j4-gOf"/>
+                                                            </connections>
+                                                        </button>
+                                                        <button opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="yXf-bu-M1A">
+                                                            <rect key="frame" x="396" y="0.0" width="51" height="30"/>
+                                                            <color key="tintColor" systemColor="systemGray2Color"/>
+                                                            <state key="normal" title="Button"/>
+                                                            <buttonConfiguration key="configuration" style="plain" title="B마트" cornerStyle="capsule" buttonSize="small">
+                                                                <fontDescription key="titleFontDescription" type="system" pointSize="13"/>
+                                                                <directionalEdgeInsets key="contentInsets" top="0.0" leading="10" bottom="0.0" trailing="10"/>
+                                                            </buttonConfiguration>
+                                                            <connections>
+                                                                <action selector="clickButton:" destination="DIx-uw-eSS" eventType="touchDown" id="uti-H8-MLu"/>
+                                                            </connections>
+                                                        </button>
+                                                        <button opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="A4c-fB-hUc">
+                                                            <rect key="frame" x="534.5" y="0.0" width="76.5" height="30"/>
+                                                            <color key="tintColor" systemColor="systemGray2Color"/>
+                                                            <state key="normal" title="Button"/>
+                                                            <buttonConfiguration key="configuration" style="plain" title="배민스토어" cornerStyle="capsule" buttonSize="small">
+                                                                <fontDescription key="titleFontDescription" type="system" pointSize="13"/>
+                                                                <directionalEdgeInsets key="contentInsets" top="0.0" leading="10" bottom="0.0" trailing="10"/>
+                                                            </buttonConfiguration>
+                                                            <connections>
+                                                                <action selector="clickButton:" destination="DIx-uw-eSS" eventType="touchDown" id="jsd-Ve-2Bw"/>
+                                                            </connections>
+                                                        </button>
+                                                        <button opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="EfH-H5-Mvz">
+                                                            <rect key="frame" x="698.5" y="0.0" width="76.5" height="30"/>
+                                                            <color key="tintColor" systemColor="systemGray2Color"/>
+                                                            <state key="normal" title="Button"/>
+                                                            <buttonConfiguration key="configuration" style="plain" title="쇼핑라이브" cornerStyle="capsule" buttonSize="small">
+                                                                <fontDescription key="titleFontDescription" type="system" pointSize="13"/>
+                                                                <directionalEdgeInsets key="contentInsets" top="0.0" leading="10" bottom="0.0" trailing="10"/>
+                                                            </buttonConfiguration>
+                                                            <connections>
+                                                                <action selector="clickButton:" destination="DIx-uw-eSS" eventType="touchDown" id="aBX-7U-tIU"/>
+                                                            </connections>
+                                                        </button>
+                                                        <button opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="fWM-Pd-DZ3">
+                                                            <rect key="frame" x="862.5" y="0.0" width="65" height="30"/>
+                                                            <color key="tintColor" systemColor="systemGray2Color"/>
+                                                            <state key="normal" title="Button"/>
+                                                            <buttonConfiguration key="configuration" style="plain" title="선물하기" cornerStyle="capsule" buttonSize="small">
+                                                                <fontDescription key="titleFontDescription" type="system" pointSize="13"/>
+                                                                <directionalEdgeInsets key="contentInsets" top="0.0" leading="10" bottom="0.0" trailing="10"/>
+                                                            </buttonConfiguration>
+                                                            <connections>
+                                                                <action selector="clickButton:" destination="DIx-uw-eSS" eventType="touchDown" id="fuU-7R-G9d"/>
+                                                            </connections>
+                                                        </button>
+                                                        <button opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="M0V-yf-XaE">
+                                                            <rect key="frame" x="1015" y="0.0" width="65" height="30"/>
+                                                            <color key="tintColor" systemColor="systemGray2Color"/>
+                                                            <state key="normal" title="Button"/>
+                                                            <buttonConfiguration key="configuration" style="plain" title="전국별미" cornerStyle="capsule" buttonSize="small">
+                                                                <fontDescription key="titleFontDescription" type="system" pointSize="13"/>
+                                                                <directionalEdgeInsets key="contentInsets" top="0.0" leading="10" bottom="0.0" trailing="10"/>
+                                                            </buttonConfiguration>
+                                                            <connections>
+                                                                <action selector="clickButton:" destination="DIx-uw-eSS" eventType="touchDown" id="fpw-tF-W4o"/>
+                                                            </connections>
+                                                        </button>
+                                                    </subviews>
+                                                    <constraints>
+                                                        <constraint firstAttribute="height" constant="30" id="isI-AI-QzO"/>
+                                                    </constraints>
+                                                </stackView>
+                                            </subviews>
+                                            <constraints>
+                                                <constraint firstItem="dhM-IW-SjJ" firstAttribute="leading" secondItem="qBi-3N-XdB" secondAttribute="leading" id="4Iy-Po-15M"/>
+                                                <constraint firstItem="dhM-IW-SjJ" firstAttribute="top" secondItem="Z18-c0-RoU" secondAttribute="top" constant="10" id="Nir-RU-ktX"/>
+                                                <constraint firstAttribute="trailing" secondItem="dhM-IW-SjJ" secondAttribute="trailing" id="w5t-RK-tAF"/>
+                                                <constraint firstItem="Z18-c0-RoU" firstAttribute="bottom" secondItem="dhM-IW-SjJ" secondAttribute="bottom" constant="10" id="xkr-fe-tuh"/>
+                                            </constraints>
+                                            <viewLayoutGuide key="contentLayoutGuide" id="7xb-hC-b56"/>
+                                            <viewLayoutGuide key="frameLayoutGuide" id="Z18-c0-RoU"/>
+                                        </scrollView>
+                                    </subviews>
+                                    <constraints>
+                                        <constraint firstAttribute="bottom" secondItem="qBi-3N-XdB" secondAttribute="bottom" id="WlP-XS-qyu"/>
+                                        <constraint firstAttribute="trailing" secondItem="qBi-3N-XdB" secondAttribute="trailing" id="ugu-au-vOw"/>
+                                        <constraint firstItem="qBi-3N-XdB" firstAttribute="top" secondItem="DIx-uw-eSS" secondAttribute="top" id="vZI-H1-4F4"/>
+                                        <constraint firstItem="qBi-3N-XdB" firstAttribute="leading" secondItem="DIx-uw-eSS" secondAttribute="leading" id="zUc-Ba-g2N"/>
+                                    </constraints>
+                                    <connections>
+                                        <outlet property="BmartB" destination="yXf-bu-M1A" id="Wv4-Yp-Hmv"/>
+                                        <outlet property="baedalB" destination="Que-yS-1HD" id="4GS-ZT-Iaj"/>
+                                        <outlet property="baemin1B" destination="k58-e5-K9u" id="qtO-ig-Jny"/>
+                                        <outlet property="baeminStoreB" destination="A4c-fB-hUc" id="2sT-WZ-OTO"/>
+                                        <outlet property="liveB" destination="EfH-H5-Mvz" id="wBg-C3-oZt"/>
+                                        <outlet property="nationFoodB" destination="M0V-yf-XaE" id="ere-FL-fNd"/>
+                                        <outlet property="pojangB" destination="8F3-7m-jDK" id="aTV-AI-BTW"/>
+                                        <outlet property="presentB" destination="fWM-Pd-DZ3" id="qZn-k2-AZW"/>
+                                        <outletCollection property="listButton" destination="M0V-yf-XaE" collectionClass="NSMutableArray" id="0Q2-Pz-M2s"/>
+                                        <outletCollection property="listButton" destination="fWM-Pd-DZ3" collectionClass="NSMutableArray" id="7GM-Bc-Yub"/>
+                                        <outletCollection property="listButton" destination="EfH-H5-Mvz" collectionClass="NSMutableArray" id="km9-FN-s5H"/>
+                                        <outletCollection property="listButton" destination="A4c-fB-hUc" collectionClass="NSMutableArray" id="kq2-UD-iER"/>
+                                        <outletCollection property="listButton" destination="yXf-bu-M1A" collectionClass="NSMutableArray" id="aUD-yt-368"/>
+                                        <outletCollection property="listButton" destination="k58-e5-K9u" collectionClass="NSMutableArray" id="ILr-uT-o1m"/>
+                                        <outletCollection property="listButton" destination="Que-yS-1HD" collectionClass="NSMutableArray" id="bMt-Ld-XcF"/>
+                                        <outletCollection property="listButton" destination="8F3-7m-jDK" collectionClass="NSMutableArray" id="pyu-ON-MoT"/>
+                                    </connections>
+                                </collectionReusableView>
+                                <connections>
+                                    <outlet property="dataSource" destination="veU-zj-2lA" id="7Rr-r4-7Gy"/>
+                                    <outlet property="delegate" destination="veU-zj-2lA" id="9bb-SA-gDj"/>
+                                </connections>
                             </collectionView>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="OGn-0h-nBu"/>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <constraints>
-                            <constraint firstItem="huf-GG-5Z3" firstAttribute="leading" secondItem="OGn-0h-nBu" secondAttribute="leading" id="3ho-Lb-SNW"/>
-                            <constraint firstItem="9cE-t2-cqm" firstAttribute="trailing" secondItem="OGn-0h-nBu" secondAttribute="trailing" id="coQ-e0-JNF"/>
-                            <constraint firstItem="9cE-t2-cqm" firstAttribute="top" secondItem="OGn-0h-nBu" secondAttribute="top" id="d2z-tD-eRy"/>
-                            <constraint firstItem="huf-GG-5Z3" firstAttribute="trailing" secondItem="OGn-0h-nBu" secondAttribute="trailing" id="gbn-OW-kQH"/>
-                            <constraint firstItem="9cE-t2-cqm" firstAttribute="leading" secondItem="OGn-0h-nBu" secondAttribute="leading" id="myj-gN-ndG"/>
-                            <constraint firstItem="huf-GG-5Z3" firstAttribute="top" secondItem="9cE-t2-cqm" secondAttribute="bottom" constant="8" symbolic="YES" id="w31-Xu-EWe"/>
-                            <constraint firstItem="huf-GG-5Z3" firstAttribute="bottom" secondItem="OGn-0h-nBu" secondAttribute="bottom" id="xYG-W0-uwh"/>
+                            <constraint firstItem="OGn-0h-nBu" firstAttribute="trailing" secondItem="huf-GG-5Z3" secondAttribute="trailing" id="JKv-hF-ca3"/>
+                            <constraint firstItem="huf-GG-5Z3" firstAttribute="leading" secondItem="OGn-0h-nBu" secondAttribute="leading" id="ksA-ul-wDw"/>
+                            <constraint firstItem="OGn-0h-nBu" firstAttribute="bottom" secondItem="huf-GG-5Z3" secondAttribute="bottom" id="pXY-GZ-VfA"/>
+                            <constraint firstItem="huf-GG-5Z3" firstAttribute="top" secondItem="OGn-0h-nBu" secondAttribute="top" id="shN-4f-Ez6"/>
                         </constraints>
                     </view>
                     <navigationItem key="navigationItem" title="위치" leftItemsSupplementBackButton="YES" id="FkN-JP-H6e">
@@ -274,6 +358,9 @@
                     </navigationItem>
                     <simulatedNavigationBarMetrics key="simulatedTopBarMetrics" translucent="NO" prompted="NO"/>
                     <simulatedTabBarMetrics key="simulatedBottomBarMetrics" translucent="NO"/>
+                    <connections>
+                        <outlet property="mainCV" destination="huf-GG-5Z3" id="hja-qm-2JD"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="zGX-Qs-hy4" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
@@ -336,7 +423,6 @@
     <resources>
         <image name="arrow.backward" catalog="system" width="128" height="98"/>
         <image name="face.smiling" catalog="system" width="128" height="121"/>
-        <image name="heart" width="40" height="40"/>
         <image name="heart" catalog="system" width="128" height="109"/>
         <image name="list.bullet.rectangle.portrait" catalog="system" width="115" height="128"/>
         <image name="magnifyingglass" catalog="system" width="128" height="115"/>
@@ -349,6 +435,9 @@
         </systemColor>
         <systemColor name="systemBrownColor">
             <color red="0.63529411764705879" green="0.51764705882352946" blue="0.36862745098039218" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </systemColor>
+        <systemColor name="systemGray2Color">
+            <color red="0.68235294117647061" green="0.68235294117647061" blue="0.69803921568627447" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
         </systemColor>
         <systemColor name="systemRedColor">
             <color red="1" green="0.23137254901960785" blue="0.18823529411764706" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
