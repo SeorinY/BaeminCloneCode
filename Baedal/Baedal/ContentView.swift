@@ -1,6 +1,11 @@
 import SwiftUI
 
 struct ContentView: View {
+    init(){
+        UINavigationBar.appearance().backgroundColor = .white
+        UINavigationBar.appearance().isHidden = true
+    }
+     
     @State var isAddressView : Bool = true;
     let ToolBarButton = [" 배민1 ", " 배달 ", " 포장 ", " B마트 ", " 배민스토어 ", " 쇼핑라이브 ", " 선물하기 ", " 전국별미 "]
     @State var buttonSelected: Int = 1
@@ -22,6 +27,7 @@ struct ContentView: View {
                             BannerView()
                             RecommendView()
                             MenuView()
+                            AdvertiseView()
                         }
                         .frame(alignment: .leading)
                         .toolbar{
@@ -43,7 +49,6 @@ struct ContentView: View {
                                             }
                                         }
                                     }
-                                    
                                 }
                             }
                             ToolbarItemGroup(placement: .bottomBar){
@@ -95,21 +100,23 @@ struct ContentView: View {
             .toolbar{
                 ToolbarItem(placement : .navigationBarLeading){
                     if(isAddressView){
-                        HStack{
-                            NavigationLink(destination: Text("HomePage")){
-                                Image(systemName: "arrow.left")
+                        VStack {
+                            HStack{
+                                NavigationLink(destination: Text("HomePage")){
+                                    Image(systemName: "arrow.left")
+                                }
+                                .foregroundColor(.black)
+                                Spacer()
+                                
+                                NavigationLink(destination: Text("주소 설정")){
+                                    Text("우리집")
+                                    Image(systemName: "chevron.down")
+                                }
+                                .foregroundColor(.black)
+                                Spacer()
                             }
-                            .foregroundColor(.black)
-                            Spacer()
-                            
-                            NavigationLink(destination: Text("주소 설정")){
-                                Text("우리집")
-                                Image(systemName: "chevron.down")
-                            }
-                            .foregroundColor(.black)
-                            Spacer()
+                            .frame(width: UIScreen.main.bounds.size.width, height : 10)
                         }
-                        .frame(width: UIScreen.main.bounds.size.width, height : 10)
                     }
                 }
             }
