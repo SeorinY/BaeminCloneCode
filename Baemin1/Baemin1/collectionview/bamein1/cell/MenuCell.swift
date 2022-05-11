@@ -7,51 +7,45 @@
 
 import UIKit
 
-struct ImageInfo{
+struct MenuInfo{
     var name:String
     var image:UIImage
 }
 
 class MenuCell: UICollectionViewCell {
+    static let menuCellId = "menuCell"
     
-    var data: ImageInfo? {
-        didSet{
-            guard let data = data else { return }
-            nameL.text = data.name
-            imgV.image = data.image
-        }
-    }
-    
-    let imgV:UIImageView = {
+        let imgV:UIImageView = {
         let imageView=UIImageView()
-        imageView.image = #imageLiteral(resourceName: "japanese")
         imageView.translatesAutoresizingMaskIntoConstraints = false
         imageView.contentMode = .scaleAspectFit
-        
         imageView.clipsToBounds = true
-        
         return imageView
     }()
     
     let nameL: UILabel = {
         let label = UILabel()
-        label.text = "TEST"
         label.translatesAutoresizingMaskIntoConstraints = false
         label.textAlignment = .center
-        label.font = UIFont.systemFont(ofSize: 14)
+        label.font = UIFont.systemFont(ofSize: 12)
         return label
     }()
     
+    func setData(with data:MenuInfo) {
+        nameL.text = data.name
+        imgV.image = data.image
+    }
+    
     override init(frame:CGRect){
         super.init(frame:frame)
-        
         contentView.addSubview(imgV)
         contentView.addSubview(nameL)
-        
+
         imgV.topAnchor.constraint(equalTo: contentView.topAnchor).isActive=true
         imgV.leadingAnchor.constraint(equalTo: contentView.leadingAnchor).isActive=true
         imgV.trailingAnchor.constraint(equalTo: contentView.trailingAnchor).isActive=true
-        imgV.bottomAnchor.constraint(equalTo: contentView.bottomAnchor,constant: -20).isActive=true
+        imgV.heightAnchor.constraint(equalToConstant: 35).isActive = true
+        imgV.bottomAnchor.constraint(equalTo: nameL.topAnchor).isActive=true
 
         nameL.leadingAnchor.constraint(equalTo: imgV.leadingAnchor).isActive=true
         nameL.trailingAnchor.constraint(equalTo: imgV.trailingAnchor).isActive=true

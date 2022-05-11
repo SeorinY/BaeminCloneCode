@@ -8,17 +8,19 @@
 import UIKit
 
 class BannerCell: UICollectionViewCell {
+    static let bannerCellId = "bannerCell"
     
-let bg:UIImageView = {
-        let iv=UIImageView()
-        iv.image = #imageLiteral(resourceName: "banner3")
-        iv.translatesAutoresizingMaskIntoConstraints=false
-        iv.contentMode = .scaleAspectFill
-        iv.clipsToBounds = true
-        //image에 borderradius 주고싶으면
-        //iv.layer.cornerRadius=12
-        return iv
+    var bg: UIImageView = {
+       let imageView = UIImageView()
+        imageView.translatesAutoresizingMaskIntoConstraints=false
+        imageView.contentMode = .scaleAspectFill
+        imageView.clipsToBounds = true
+        return imageView
     }()
+    
+    func setData(image:UIImage){
+        bg.image = image
+    }
     
     override init(frame:CGRect){
         super.init(frame:frame)

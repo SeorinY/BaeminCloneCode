@@ -15,6 +15,10 @@ class ViewController: UIViewController {
         }
     }
     
+    override func viewDidLoad() {
+        self.mainCV.register(Baemin1Cell.self, forCellWithReuseIdentifier: Baemin1Cell.baemin1CellId)
+    }
+    
     func createLayout() -> UICollectionViewCompositionalLayout {
         let size = NSCollectionLayoutSize(widthDimension: .fractionalWidth(1), heightDimension: .fractionalHeight(1))
         let item = NSCollectionLayoutItem(layoutSize: size)
@@ -35,12 +39,18 @@ extension ViewController: UICollectionViewDelegate, UICollectionViewDataSource {
     }
     
     func collectionView(_ collectionView: UICollectionView, cellForItemAt indexPath: IndexPath) -> UICollectionViewCell {
-        guard let cell = collectionView.dequeueReusableCell(withReuseIdentifier: "mainCell", for: indexPath) as?
+        guard let cell = collectionView.dequeueReusableCell(withReuseIdentifier: "baemin1Cell", for: indexPath) as?
                 UICollectionViewCell else {
             return UICollectionViewCell()
         }
-        
-        if indexPath.item % 2 == 0 {
+        if indexPath.item == 0 {
+            guard let cell = collectionView.dequeueReusableCell(withReuseIdentifier:Baemin1Cell.baemin1CellId, for: indexPath) as?
+                    Baemin1Cell else {
+                return UICollectionViewCell()
+            }
+            return cell
+        }
+        else if indexPath.item % 2 == 0 {
             cell.backgroundColor = .systemPink
         } else {
             cell.backgroundColor = .systemBlue
