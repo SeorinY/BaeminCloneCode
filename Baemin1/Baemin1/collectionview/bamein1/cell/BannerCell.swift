@@ -24,7 +24,6 @@ class BannerCell: UICollectionViewCell {
     
     override init(frame:CGRect){
         super.init(frame:frame)
-        
         contentView.addSubview(bg)
         bg.topAnchor.constraint(equalTo: contentView.topAnchor).isActive=true
         bg.leadingAnchor.constraint(equalTo: contentView.leadingAnchor).isActive=true

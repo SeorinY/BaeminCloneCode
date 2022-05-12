@@ -13,6 +13,7 @@ class Baemin1Cell: UICollectionViewCell {
     var baemin1CV: UICollectionView = {
         let layout = UICollectionViewFlowLayout()
         let collectionView = UICollectionView(frame: .zero, collectionViewLayout: layout)
+        
         return collectionView
     }()
     
@@ -73,55 +74,60 @@ class Baemin1Cell: UICollectionViewCell {
              
              if sectionNumber == 0 {
                  let item = NSCollectionLayoutItem(layoutSize: .init(widthDimension: .fractionalWidth(1), heightDimension: .fractionalHeight(1)))
-                 item.contentInsets.trailing = 2
-                 item.contentInsets.bottom = 16
+                 //item.contentInsets.trailing = 2
+                 item.contentInsets.bottom = 8
                      
                  let group = NSCollectionLayoutGroup.horizontal(layoutSize: .init(widthDimension: .fractionalWidth(1), heightDimension: .absolute(150)), subitems: [item])
                      
                  let section = NSCollectionLayoutSection(group: group)
                  section.orthogonalScrollingBehavior = .paging
+
                  return section
              } else if sectionNumber == 1 {
                  
-                 let item = NSCollectionLayoutItem(layoutSize: .init(widthDimension: .fractionalWidth(0.2), heightDimension: .absolute(80)))
+                 let item = NSCollectionLayoutItem(layoutSize: .init(widthDimension: .fractionalWidth(0.2), heightDimension: .absolute(60)))
                  item.contentInsets.trailing = 2
-                 item.contentInsets.bottom = 16
-                 
-                 let group = NSCollectionLayoutGroup.horizontal(layoutSize: .init(widthDimension: .fractionalWidth(1), heightDimension: .estimated(300)), subitems: [item])
+                 item.contentInsets.bottom = 4
+                 let group = NSCollectionLayoutGroup.horizontal(layoutSize: .init(widthDimension: .fractionalWidth(1), heightDimension: .estimated(250)), subitems: [item])
                  //group.contentInsets.leading = 16
                  
                  let section = NSCollectionLayoutSection(group: group)
                  section.contentInsets.leading = 4
                  section.contentInsets.trailing = 4
-                 
+                 section.contentInsets.bottom = 16
+    
                  return section
              } else if sectionNumber == 2 {
                  let item = NSCollectionLayoutItem.init(layoutSize: .init(widthDimension: .fractionalWidth(1), heightDimension: .fractionalHeight(1)))
-                 item.contentInsets.trailing = 8
+                 item.contentInsets.trailing = 10
                  
-                 let group = NSCollectionLayoutGroup.horizontal(layoutSize: .init(widthDimension: .fractionalWidth(0.42), heightDimension: .absolute(300)), subitems: [item])
+                 let group = NSCollectionLayoutGroup.horizontal(layoutSize: .init(widthDimension: .fractionalWidth(0.42), heightDimension: .absolute(230)), subitems: [item])
                  
                  let section = NSCollectionLayoutSection(group: group)
                  section.orthogonalScrollingBehavior = .continuous
                  section.contentInsets.leading = 16
+                 section.contentInsets.bottom = 20
 
-//                 section.boundarySupplementaryItems = [
-//                     .init(layoutSize: .init(widthDimension: .fractionalWidth(1), heightDimension: .absolute(50)),elementKind: BestHeader.bestHeaderId,alignment: . topLeading)
-//                 ]
+                 section.boundarySupplementaryItems = [
+                     .init(layoutSize: .init(widthDimension: .fractionalWidth(1), heightDimension: .absolute(50)),elementKind: BestHeader.bestHeaderId,alignment: . topLeading)
+                 ]
                  return section
              } else {
                  
                  let item = NSCollectionLayoutItem(layoutSize: .init(widthDimension: .fractionalWidth(1), heightDimension: .fractionalHeight(1)))
                  item.contentInsets.leading = 16
                  item.contentInsets.trailing = 16
-                 item.contentInsets.bottom = 20
+                 item.contentInsets.bottom = 25
                      
                  let group = NSCollectionLayoutGroup.horizontal(layoutSize: .init(widthDimension: .fractionalWidth(1), heightDimension: .absolute(250)), subitems: [item])
-                 //               pagingheader.pinToVisibleBounds = true
+                               
                  let section = NSCollectionLayoutSection(group: group)
-//                 section.boundarySupplementaryItems = [
-//                     .init(layoutSize: .init(widthDimension: .fractionalWidth(1), heightDimension: .absolute(50)),elementKind: HeaderTabBar.tabBarHeaderId,alignment: . topLeading)
-//                 ]
+                 
+                 let pagingheader = NSCollectionLayoutBoundarySupplementaryItem(layoutSize: .init(widthDimension: .fractionalWidth(1), heightDimension: .absolute(50)),elementKind: StoreHeader.storeHeaderId,alignment: . topLeading)
+                 pagingheader.pinToVisibleBounds = true
+                 section.boundarySupplementaryItems = [
+                     pagingheader
+                 ]
                  return section
              }
          }
@@ -132,9 +138,8 @@ class Baemin1Cell: UICollectionViewCell {
         baemin1CV.collectionViewLayout = createLayout()
         self.addSubview(baemin1CV)
         configureCollectionView()
-        
-//        collectionView.register(BestHeader.self,forSupplementaryViewOfKind:BestHeader.bestHeaderId,withReuseIdentifier:BheaderId)
-//        collectionView.register(HeaderTabBar.self, forSupplementaryViewOfKind:HeaderTabBar.tabBarHeaderId,withReuseIdentifier:SheaderId)
+        baemin1CV.register(BestHeader.self,forSupplementaryViewOfKind:BestHeader.bestHeaderId,withReuseIdentifier:"BheaderId")
+        baemin1CV.register(StoreHeader.self, forSupplementaryViewOfKind:StoreHeader.storeHeaderId,withReuseIdentifier:"SheaderId")
     }
     
     required init?(coder aDecoder : NSCoder) {
@@ -147,6 +152,19 @@ extension Baemin1Cell: UICollectionViewDelegate, UICollectionViewDataSource {
      func numberOfSections(in collectionView: UICollectionView) -> Int {
 
         return 4
+    }
+    
+    func collectionView(_ collectionView: UICollectionView, viewForSupplementaryElementOfKind kind: String, at indexPath: IndexPath) -> UICollectionReusableView {
+        if indexPath.section == 2{
+            let header = collectionView.dequeueReusableSupplementaryView(ofKind: kind, withReuseIdentifier: "BheaderId", for: indexPath) as! BestHeader
+            return header
+        } else if indexPath.section == 3 {
+            let header = collectionView.dequeueReusableSupplementaryView(ofKind: kind, withReuseIdentifier: "SheaderId", for: indexPath) as! StoreHeader
+            return header
+        } else {
+            let header = collectionView.dequeueReusableSupplementaryView(ofKind: kind, withReuseIdentifier: "headerId", for: indexPath)
+            return header
+        }
     }
     
     func collectionView(_ collectionView: UICollectionView, numberOfItemsInSection section: Int) -> Int {
@@ -174,16 +192,18 @@ extension Baemin1Cell: UICollectionViewDelegate, UICollectionViewDataSource {
             return cell
         } else if indexPath.section == 2 {
             guard let cell = collectionView.dequeueReusableCell(withReuseIdentifier: BestCell.bestCellId, for: indexPath) as? BestCell else { return UICollectionViewCell() }
-            
+
             cell.setData(with: bestData[indexPath.row])
             return cell
         } else {
             guard let cell = collectionView.dequeueReusableCell(withReuseIdentifier: StoreCell.storeCellId, for: indexPath) as? StoreCell else { return UICollectionViewCell() }
             
             cell.setData(with: storeData[indexPath.row])
+            cell.backgroundColor = .white
+            cell.layer.cornerRadius = 20
             cell.layer.shadowColor = UIColor.black.cgColor
+            cell.layer.shadowOffset = CGSize(width: 1, height: 1)
             cell.layer.shadowOpacity = 0.3
-            cell.layer.shadowRadius = 5
             return cell
         }
     }

@@ -8,6 +8,8 @@
 
 /* Begin PBXBuildFile section */
 		3A93B2D128106A1400D7F4F5 /* TabBarController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3A93B2D028106A1400D7F4F5 /* TabBarController.swift */; };
+		3AC95DCD282CFEB200944622 /* BestHeader.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3AC95DCC282CFEB200944622 /* BestHeader.swift */; };
+		3AC95DCF282CFECB00944622 /* StoreHeader.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3AC95DCE282CFECB00944622 /* StoreHeader.swift */; };
 		3AD1C1CB282BAC060014D671 /* HexColor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3AD1C1CA282BAC060014D671 /* HexColor.swift */; };
 		3AF7E78C281295D500C3A1B5 /* MainHeader.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3AF7E78B281295D500C3A1B5 /* MainHeader.swift */; };
 		3AFB1F84281170810065621D /* BannerCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3AFB1F83281170810065621D /* BannerCell.swift */; };
@@ -25,6 +27,8 @@
 
 /* Begin PBXFileReference section */
 		3A93B2D028106A1400D7F4F5 /* TabBarController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TabBarController.swift; sourceTree = "<group>"; };
+		3AC95DCC282CFEB200944622 /* BestHeader.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BestHeader.swift; sourceTree = "<group>"; };
+		3AC95DCE282CFECB00944622 /* StoreHeader.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StoreHeader.swift; sourceTree = "<group>"; };
 		3AD1C1CA282BAC060014D671 /* HexColor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HexColor.swift; sourceTree = "<group>"; };
 		3AF7E78B281295D500C3A1B5 /* MainHeader.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainHeader.swift; sourceTree = "<group>"; };
 		3AFB1F83281170810065621D /* BannerCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BannerCell.swift; sourceTree = "<group>"; };
@@ -93,6 +97,8 @@
 		3AFB1F8D281175150065621D /* header */ = {
 			isa = PBXGroup;
 			children = (
+				3AC95DCC282CFEB200944622 /* BestHeader.swift */,
+				3AC95DCE282CFECB00944622 /* StoreHeader.swift */,
 			);
 			path = header;
 			sourceTree = "<group>";
@@ -120,13 +126,13 @@
 				3AFB1F812811705A0065621D /* collectionview */,
 				52EF7A9B27FDADAA00FAB89F /* AppDelegate.swift */,
 				52EF7A9D27FDADAA00FAB89F /* SceneDelegate.swift */,
+				3A93B2D028106A1400D7F4F5 /* TabBarController.swift */,
+				3AF7E78B281295D500C3A1B5 /* MainHeader.swift */,
 				52EF7A9F27FDADAA00FAB89F /* ViewController.swift */,
 				52EF7AA127FDADAA00FAB89F /* Main.storyboard */,
 				52EF7AA427FDADAC00FAB89F /* Assets.xcassets */,
 				52EF7AA627FDADAC00FAB89F /* LaunchScreen.storyboard */,
 				52EF7AA927FDADAC00FAB89F /* Info.plist */,
-				3A93B2D028106A1400D7F4F5 /* TabBarController.swift */,
-				3AF7E78B281295D500C3A1B5 /* MainHeader.swift */,
 			);
 			path = Baemin1;
 			sourceTree = "<group>";
@@ -204,6 +210,7 @@
 			files = (
 				52EF7AA027FDADAA00FAB89F /* ViewController.swift in Sources */,
 				3AFB1F84281170810065621D /* BannerCell.swift in Sources */,
+				3AC95DCF282CFECB00944622 /* StoreHeader.swift in Sources */,
 				3AD1C1CB282BAC060014D671 /* HexColor.swift in Sources */,
 				3AFB1F86281170900065621D /* MenuCell.swift in Sources */,
 				3AFB1F8F2811760F0065621D /* Baemin1Cell.swift in Sources */,
@@ -212,6 +219,7 @@
 				52EF7A9C27FDADAA00FAB89F /* AppDelegate.swift in Sources */,
 				3AFB1F882811709C0065621D /* BestCell.swift in Sources */,
 				52EF7A9E27FDADAA00FAB89F /* SceneDelegate.swift in Sources */,
+				3AC95DCD282CFEB200944622 /* BestHeader.swift in Sources */,
 				3AFB1F8A281170A70065621D /* StoreCell.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
