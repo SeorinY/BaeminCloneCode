@@ -7,6 +7,19 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+<<<<<<< HEAD
+		3A93B2D128106A1400D7F4F5 /* TabBarController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3A93B2D028106A1400D7F4F5 /* TabBarController.swift */; };
+		3AC95DCD282CFEB200944622 /* BestHeader.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3AC95DCC282CFEB200944622 /* BestHeader.swift */; };
+		3AC95DCF282CFECB00944622 /* StoreHeader.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3AC95DCE282CFECB00944622 /* StoreHeader.swift */; };
+		3AD1C1CB282BAC060014D671 /* HexColor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3AD1C1CA282BAC060014D671 /* HexColor.swift */; };
+		3AF7E78C281295D500C3A1B5 /* MainHeader.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3AF7E78B281295D500C3A1B5 /* MainHeader.swift */; };
+		3AFB1F84281170810065621D /* BannerCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3AFB1F83281170810065621D /* BannerCell.swift */; };
+		3AFB1F86281170900065621D /* MenuCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3AFB1F85281170900065621D /* MenuCell.swift */; };
+		3AFB1F882811709C0065621D /* BestCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3AFB1F872811709C0065621D /* BestCell.swift */; };
+		3AFB1F8A281170A70065621D /* StoreCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3AFB1F89281170A70065621D /* StoreCell.swift */; };
+		3AFB1F8F2811760F0065621D /* Baemin1Cell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3AFB1F8E2811760F0065621D /* Baemin1Cell.swift */; };
+=======
+>>>>>>> develop
 		52EF7A9C27FDADAA00FAB89F /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 52EF7A9B27FDADAA00FAB89F /* AppDelegate.swift */; };
 		52EF7A9E27FDADAA00FAB89F /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 52EF7A9D27FDADAA00FAB89F /* SceneDelegate.swift */; };
 		52EF7AA027FDADAA00FAB89F /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 52EF7A9F27FDADAA00FAB89F /* ViewController.swift */; };
@@ -16,6 +29,19 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+<<<<<<< HEAD
+		3A93B2D028106A1400D7F4F5 /* TabBarController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TabBarController.swift; sourceTree = "<group>"; };
+		3AC95DCC282CFEB200944622 /* BestHeader.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BestHeader.swift; sourceTree = "<group>"; };
+		3AC95DCE282CFECB00944622 /* StoreHeader.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StoreHeader.swift; sourceTree = "<group>"; };
+		3AD1C1CA282BAC060014D671 /* HexColor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HexColor.swift; sourceTree = "<group>"; };
+		3AF7E78B281295D500C3A1B5 /* MainHeader.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainHeader.swift; sourceTree = "<group>"; };
+		3AFB1F83281170810065621D /* BannerCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BannerCell.swift; sourceTree = "<group>"; };
+		3AFB1F85281170900065621D /* MenuCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MenuCell.swift; sourceTree = "<group>"; };
+		3AFB1F872811709C0065621D /* BestCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BestCell.swift; sourceTree = "<group>"; };
+		3AFB1F89281170A70065621D /* StoreCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StoreCell.swift; sourceTree = "<group>"; };
+		3AFB1F8E2811760F0065621D /* Baemin1Cell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Baemin1Cell.swift; sourceTree = "<group>"; };
+=======
+>>>>>>> develop
 		52EF7A9827FDADAA00FAB89F /* Baemin1.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Baemin1.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		52EF7A9B27FDADAA00FAB89F /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		52EF7A9D27FDADAA00FAB89F /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -37,6 +63,55 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+<<<<<<< HEAD
+		3AD1C1C9282BABF40014D671 /* util */ = {
+			isa = PBXGroup;
+			children = (
+				3AD1C1CA282BAC060014D671 /* HexColor.swift */,
+			);
+			path = util;
+			sourceTree = "<group>";
+		};
+		3AFB1F802811704B0065621D /* cell */ = {
+			isa = PBXGroup;
+			children = (
+				3AFB1F83281170810065621D /* BannerCell.swift */,
+				3AFB1F85281170900065621D /* MenuCell.swift */,
+				3AFB1F872811709C0065621D /* BestCell.swift */,
+				3AFB1F89281170A70065621D /* StoreCell.swift */,
+			);
+			path = cell;
+			sourceTree = "<group>";
+		};
+		3AFB1F812811705A0065621D /* collectionview */ = {
+			isa = PBXGroup;
+			children = (
+				3AFB1F82281170680065621D /* bamein1 */,
+			);
+			path = collectionview;
+			sourceTree = "<group>";
+		};
+		3AFB1F82281170680065621D /* bamein1 */ = {
+			isa = PBXGroup;
+			children = (
+				3AFB1F8E2811760F0065621D /* Baemin1Cell.swift */,
+				3AFB1F8D281175150065621D /* header */,
+				3AFB1F802811704B0065621D /* cell */,
+			);
+			path = bamein1;
+			sourceTree = "<group>";
+		};
+		3AFB1F8D281175150065621D /* header */ = {
+			isa = PBXGroup;
+			children = (
+				3AC95DCC282CFEB200944622 /* BestHeader.swift */,
+				3AC95DCE282CFECB00944622 /* StoreHeader.swift */,
+			);
+			path = header;
+			sourceTree = "<group>";
+		};
+=======
+>>>>>>> develop
 		52EF7A8F27FDADAA00FAB89F = {
 			isa = PBXGroup;
 			children = (
@@ -56,8 +131,17 @@
 		52EF7A9A27FDADAA00FAB89F /* Baemin1 */ = {
 			isa = PBXGroup;
 			children = (
+<<<<<<< HEAD
+				3AD1C1C9282BABF40014D671 /* util */,
+				3AFB1F812811705A0065621D /* collectionview */,
 				52EF7A9B27FDADAA00FAB89F /* AppDelegate.swift */,
 				52EF7A9D27FDADAA00FAB89F /* SceneDelegate.swift */,
+				3A93B2D028106A1400D7F4F5 /* TabBarController.swift */,
+				3AF7E78B281295D500C3A1B5 /* MainHeader.swift */,
+=======
+				52EF7A9B27FDADAA00FAB89F /* AppDelegate.swift */,
+				52EF7A9D27FDADAA00FAB89F /* SceneDelegate.swift */,
+>>>>>>> develop
 				52EF7A9F27FDADAA00FAB89F /* ViewController.swift */,
 				52EF7AA127FDADAA00FAB89F /* Main.storyboard */,
 				52EF7AA427FDADAC00FAB89F /* Assets.xcassets */,
@@ -139,8 +223,23 @@
 			buildActionMask = 2147483647;
 			files = (
 				52EF7AA027FDADAA00FAB89F /* ViewController.swift in Sources */,
+<<<<<<< HEAD
+				3AFB1F84281170810065621D /* BannerCell.swift in Sources */,
+				3AC95DCF282CFECB00944622 /* StoreHeader.swift in Sources */,
+				3AD1C1CB282BAC060014D671 /* HexColor.swift in Sources */,
+				3AFB1F86281170900065621D /* MenuCell.swift in Sources */,
+				3AFB1F8F2811760F0065621D /* Baemin1Cell.swift in Sources */,
+				3A93B2D128106A1400D7F4F5 /* TabBarController.swift in Sources */,
+				3AF7E78C281295D500C3A1B5 /* MainHeader.swift in Sources */,
+				52EF7A9C27FDADAA00FAB89F /* AppDelegate.swift in Sources */,
+				3AFB1F882811709C0065621D /* BestCell.swift in Sources */,
+				52EF7A9E27FDADAA00FAB89F /* SceneDelegate.swift in Sources */,
+				3AC95DCD282CFEB200944622 /* BestHeader.swift in Sources */,
+				3AFB1F8A281170A70065621D /* StoreCell.swift in Sources */,
+=======
 				52EF7A9C27FDADAA00FAB89F /* AppDelegate.swift in Sources */,
 				52EF7A9E27FDADAA00FAB89F /* SceneDelegate.swift in Sources */,
+>>>>>>> develop
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -216,7 +315,11 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
+<<<<<<< HEAD
+				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
+=======
 				IPHONEOS_DEPLOYMENT_TARGET = 15.4;
+>>>>>>> develop
 				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
 				MTL_FAST_MATH = YES;
 				ONLY_ACTIVE_ARCH = YES;
@@ -270,7 +373,11 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
+<<<<<<< HEAD
+				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
+=======
 				IPHONEOS_DEPLOYMENT_TARGET = 15.4;
+>>>>>>> develop
 				MTL_ENABLE_DEBUG_INFO = NO;
 				MTL_FAST_MATH = YES;
 				SDKROOT = iphoneos;
@@ -293,6 +400,10 @@
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
 				INFOPLIST_KEY_UIMainStoryboardFile = Main;
+<<<<<<< HEAD
+				INFOPLIST_KEY_UISupportedInterfaceOrientations = UIInterfaceOrientationPortrait;
+=======
+>>>>>>> develop
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				LD_RUNPATH_SEARCH_PATHS = (
@@ -304,7 +415,11 @@
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
+<<<<<<< HEAD
+				TARGETED_DEVICE_FAMILY = 1;
+=======
 				TARGETED_DEVICE_FAMILY = "1,2";
+>>>>>>> develop
 			};
 			name = Debug;
 		};
@@ -321,6 +436,10 @@
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
 				INFOPLIST_KEY_UIMainStoryboardFile = Main;
+<<<<<<< HEAD
+				INFOPLIST_KEY_UISupportedInterfaceOrientations = UIInterfaceOrientationPortrait;
+=======
+>>>>>>> develop
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				LD_RUNPATH_SEARCH_PATHS = (
@@ -332,7 +451,11 @@
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
+<<<<<<< HEAD
+				TARGETED_DEVICE_FAMILY = 1;
+=======
 				TARGETED_DEVICE_FAMILY = "1,2";
+>>>>>>> develop
 			};
 			name = Release;
 		};

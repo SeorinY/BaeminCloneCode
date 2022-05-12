@@ -69,6 +69,10 @@
 		52EF7A8027FDAD2700FAB89F /* Baedal */ = {
 			isa = PBXGroup;
 			children = (
+<<<<<<< HEAD
+				52EF7A8127FDAD2700FAB89F /* BaedalApp.swift */,
+				52EF7A8327FDAD2700FAB89F /* ContentView.swift */,
+=======
 				5264F691281A7F71004AB2ED /* Model */,
 				52EF7A8127FDAD2700FAB89F /* BaedalApp.swift */,
 				52EF7A8327FDAD2700FAB89F /* ContentView.swift */,
@@ -76,6 +80,7 @@
 				525B76432809B25C00F9596A /* RecommendView.swift */,
 				52C255C4280BD04100D0E6E9 /* MenuView.swift */,
 				52B48C7E280D41DF00020EC5 /* AdvertiseView.swift */,
+>>>>>>> develop
 				52EF7A8527FDAD2900FAB89F /* Assets.xcassets */,
 				52EF7A8727FDAD2900FAB89F /* Preview Content */,
 			);

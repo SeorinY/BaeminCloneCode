@@ -1,4 +1,452 @@
 <?xml version="1.0" encoding="UTF-8"?>
+<<<<<<< HEAD
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="20037" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="HXV-fi-kQr">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="20020"/>
+        <capability name="Image references" minToolsVersion="12.0"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="collection view cell content view" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--Tab Bar Controller-->
+        <scene sceneID="Smt-Oc-ANI">
+            <objects>
+                <tabBarController id="HXV-fi-kQr" customClass="TabBarController" customModule="Baemin1" customModuleProvider="target" sceneMemberID="viewController">
+                    <tabBar key="tabBar" contentMode="scaleAspectFill" insetsLayoutMarginsFromSafeArea="NO" id="SaD-12-mnY">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="49"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <color key="tintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    </tabBar>
+                    <userDefinedRuntimeAttributes>
+                        <userDefinedRuntimeAttribute type="number" keyPath="selectedIndex">
+                            <integer key="value" value="2"/>
+                        </userDefinedRuntimeAttribute>
+                    </userDefinedRuntimeAttributes>
+                    <connections>
+                        <outlet property="myTabBar" destination="SaD-12-mnY" id="9cC-5t-KVf"/>
+                        <segue destination="oah-bs-yhO" kind="relationship" relationship="viewControllers" id="RQu-hK-0DL"/>
+                        <segue destination="uKI-41-q68" kind="relationship" relationship="viewControllers" id="zyV-Ls-wLA"/>
+                        <segue destination="Su2-nS-BTm" kind="relationship" relationship="viewControllers" id="DLw-G0-qPY"/>
+                        <segue destination="qT2-He-QoD" kind="relationship" relationship="viewControllers" id="pWM-e7-EpW"/>
+                        <segue destination="GS4-Vd-C30" kind="relationship" relationship="viewControllers" id="MKg-Of-G9A"/>
+                    </connections>
+                </tabBarController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="tc0-Yu-Gxp" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="858" y="1996"/>
+        </scene>
+        <!--찜-->
+        <scene sceneID="WL5-I5-ZxD">
+            <objects>
+                <navigationController id="uKI-41-q68" sceneMemberID="viewController">
+                    <tabBarItem key="tabBarItem" title="찜" image="heart" catalog="system" landscapeImage="heart" id="nZ2-qD-1AP"/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="Mgk-cP-i2x">
+                        <rect key="frame" x="0.0" y="44" width="414" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <navigationBarAppearance key="scrollEdgeAppearance"/>
+                    </navigationBar>
+                    <connections>
+                        <segue destination="hU7-qU-bH2" kind="relationship" relationship="rootViewController" id="UlQ-rZ-7aR"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="sPR-np-obK" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="55" y="2792"/>
+        </scene>
+        <!--my 배민-->
+        <scene sceneID="9rh-aF-bpK">
+            <objects>
+                <navigationController id="GS4-Vd-C30" sceneMemberID="viewController">
+                    <tabBarItem key="tabBarItem" title="my 배민" image="face.smiling" catalog="system" id="Mzb-Hx-czG"/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="oZI-FV-oXa">
+                        <rect key="frame" x="0.0" y="44" width="414" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <navigationBarAppearance key="scrollEdgeAppearance"/>
+                    </navigationBar>
+                    <connections>
+                        <segue destination="Rd8-qs-AWS" kind="relationship" relationship="rootViewController" id="KoI-pa-9s3"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="P59-oO-eBR" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="2575" y="2792"/>
+        </scene>
+        <!--주문내역-->
+        <scene sceneID="Q6U-B3-Hss">
+            <objects>
+                <navigationController id="qT2-He-QoD" sceneMemberID="viewController">
+                    <tabBarItem key="tabBarItem" title="주문내역" image="list.bullet.rectangle.portrait" catalog="system" id="EfH-o6-QrE"/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="VEX-m7-93q">
+                        <rect key="frame" x="0.0" y="44" width="414" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <navigationBarAppearance key="scrollEdgeAppearance"/>
+                    </navigationBar>
+                    <connections>
+                        <segue destination="epl-W4-fu5" kind="relationship" relationship="rootViewController" id="oid-Zx-aCz"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="4fs-GX-5j9" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1693" y="2792"/>
+        </scene>
+        <!--Navigation Controller-->
+        <scene sceneID="3tX-vh-9dL">
+            <objects>
+                <navigationController id="Su2-nS-BTm" sceneMemberID="viewController">
+                    <tabBarItem key="tabBarItem" title="" id="saU-5c-oTE">
+                        <imageReference key="image" image="power.circle.fill" catalog="system" symbolScale="large"/>
+                    </tabBarItem>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="vZz-Y3-ayZ">
+                        <rect key="frame" x="0.0" y="44" width="414" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <textAttributes key="largeTitleTextAttributes">
+                            <color key="textColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        </textAttributes>
+                        <navigationBarAppearance key="scrollEdgeAppearance"/>
+                    </navigationBar>
+                    <connections>
+                        <segue destination="veU-zj-2lA" kind="relationship" relationship="rootViewController" id="kJP-c8-aYN"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="tRE-4c-yBe" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="859" y="2792"/>
+        </scene>
+        <!--View Controller-->
+        <scene sceneID="B60-xK-onF">
+            <objects>
+                <viewController id="bJc-Em-h5f" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="1hD-JY-AxM">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <viewLayoutGuide key="safeArea" id="TWf-GE-FtH"/>
+                        <color key="backgroundColor" systemColor="systemBlueColor"/>
+                    </view>
+                    <navigationItem key="navigationItem" id="5Yq-VO-ZCZ"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="QR7-Gh-whZ" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-852" y="3506"/>
+        </scene>
+        <!--View Controller-->
+        <scene sceneID="mfU-cv-hPc">
+            <objects>
+                <viewController id="hU7-qU-bH2" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="c28-3F-hQw">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <viewLayoutGuide key="safeArea" id="ejv-9n-3ge"/>
+                        <color key="backgroundColor" systemColor="systemBrownColor"/>
+                    </view>
+                    <navigationItem key="navigationItem" id="nJK-D6-P1T"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Qzu-NF-zhd" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="54" y="3506"/>
+        </scene>
+        <!--위치-->
+        <scene sceneID="WDQ-f0-X2h">
+            <objects>
+                <viewController id="veU-zj-2lA" customClass="ViewController" customModule="Baemin1" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="I5S-Nr-G9W">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="725"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <collectionView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" dataMode="prototypes" translatesAutoresizingMaskIntoConstraints="NO" id="huf-GG-5Z3">
+                                <rect key="frame" x="0.0" y="0.0" width="414" height="725"/>
+                                <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                                <collectionViewFlowLayout key="collectionViewLayout" automaticEstimatedItemSize="YES" minimumLineSpacing="10" minimumInteritemSpacing="10" id="gDm-4o-Al0">
+                                    <size key="itemSize" width="413" height="675"/>
+                                    <size key="headerReferenceSize" width="50" height="50"/>
+                                    <size key="footerReferenceSize" width="0.0" height="0.0"/>
+                                    <inset key="sectionInset" minX="0.0" minY="0.0" maxX="0.0" maxY="0.0"/>
+                                </collectionViewFlowLayout>
+                                <cells>
+                                    <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" reuseIdentifier="baemin1Cell" id="MXH-lj-c9e">
+                                        <rect key="frame" x="0.5" y="50" width="413" height="675"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                        <collectionViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO" id="kAz-Uu-XpA">
+                                            <rect key="frame" x="0.0" y="0.0" width="413" height="675"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                        </collectionViewCellContentView>
+                                    </collectionViewCell>
+                                </cells>
+                                <collectionReusableView key="sectionHeaderView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" reuseIdentifier="mainHeader" id="DIx-uw-eSS" customClass="MainHeader" customModule="Baemin1" customModuleProvider="target">
+                                    <rect key="frame" x="0.0" y="0.0" width="414" height="50"/>
+                                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                    <subviews>
+                                        <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" ambiguous="YES" placeholderIntrinsicWidth="1080" placeholderIntrinsicHeight="50" alwaysBounceHorizontal="YES" showsVerticalScrollIndicator="NO" translatesAutoresizingMaskIntoConstraints="NO" id="qBi-3N-XdB">
+                                            <rect key="frame" x="0.0" y="0.0" width="414" height="50"/>
+                                            <subviews>
+                                                <stackView autoresizesSubviews="NO" opaque="NO" contentMode="scaleToFill" placeholderIntrinsicWidth="1080" placeholderIntrinsicHeight="50" distribution="equalSpacing" translatesAutoresizingMaskIntoConstraints="NO" id="dhM-IW-SjJ" customClass="Stack" customModule="Baemin1" customModuleProvider="target">
+                                                    <rect key="frame" x="0.0" y="10" width="1080" height="30"/>
+                                                    <subviews>
+                                                        <button autoresizesSubviews="NO" opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="k58-e5-K9u">
+                                                            <rect key="frame" x="0.0" y="0.0" width="48.5" height="30"/>
+                                                            <color key="tintColor" systemColor="systemGray2Color"/>
+                                                            <state key="normal" title="Button"/>
+                                                            <buttonConfiguration key="configuration" style="plain" title="배민1" cornerStyle="capsule" buttonSize="small">
+                                                                <fontDescription key="titleFontDescription" type="system" pointSize="13"/>
+                                                                <directionalEdgeInsets key="contentInsets" top="0.0" leading="10" bottom="0.0" trailing="10"/>
+                                                            </buttonConfiguration>
+                                                            <connections>
+                                                                <action selector="clickButton:" destination="DIx-uw-eSS" eventType="touchDown" id="DU8-HP-Kiq"/>
+                                                            </connections>
+                                                        </button>
+                                                        <button opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Que-yS-1HD">
+                                                            <rect key="frame" x="136" y="0.0" width="42.5" height="30"/>
+                                                            <color key="tintColor" systemColor="systemGray2Color"/>
+                                                            <state key="normal" title="Button"/>
+                                                            <buttonConfiguration key="configuration" style="plain" title="배달" cornerStyle="capsule" buttonSize="small">
+                                                                <fontDescription key="titleFontDescription" type="system" pointSize="13"/>
+                                                                <directionalEdgeInsets key="contentInsets" top="0.0" leading="10" bottom="0.0" trailing="10"/>
+                                                            </buttonConfiguration>
+                                                            <connections>
+                                                                <action selector="clickButton:" destination="DIx-uw-eSS" eventType="touchDown" id="Onr-i0-6vd"/>
+                                                            </connections>
+                                                        </button>
+                                                        <button opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="8F3-7m-jDK">
+                                                            <rect key="frame" x="266" y="0.0" width="42.5" height="30"/>
+                                                            <color key="tintColor" systemColor="systemGray2Color"/>
+                                                            <state key="normal" title="Button"/>
+                                                            <buttonConfiguration key="configuration" style="plain" title="포장" cornerStyle="capsule" buttonSize="small">
+                                                                <fontDescription key="titleFontDescription" type="system" pointSize="13"/>
+                                                                <directionalEdgeInsets key="contentInsets" top="0.0" leading="10" bottom="0.0" trailing="10"/>
+                                                            </buttonConfiguration>
+                                                            <connections>
+                                                                <action selector="clickButton:" destination="DIx-uw-eSS" eventType="touchDown" id="Di0-j4-gOf"/>
+                                                            </connections>
+                                                        </button>
+                                                        <button opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="yXf-bu-M1A">
+                                                            <rect key="frame" x="396" y="0.0" width="51" height="30"/>
+                                                            <color key="tintColor" systemColor="systemGray2Color"/>
+                                                            <state key="normal" title="Button"/>
+                                                            <buttonConfiguration key="configuration" style="plain" title="B마트" cornerStyle="capsule" buttonSize="small">
+                                                                <fontDescription key="titleFontDescription" type="system" pointSize="13"/>
+                                                                <directionalEdgeInsets key="contentInsets" top="0.0" leading="10" bottom="0.0" trailing="10"/>
+                                                            </buttonConfiguration>
+                                                            <connections>
+                                                                <action selector="clickButton:" destination="DIx-uw-eSS" eventType="touchDown" id="uti-H8-MLu"/>
+                                                            </connections>
+                                                        </button>
+                                                        <button opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="A4c-fB-hUc">
+                                                            <rect key="frame" x="534.5" y="0.0" width="76.5" height="30"/>
+                                                            <color key="tintColor" systemColor="systemGray2Color"/>
+                                                            <state key="normal" title="Button"/>
+                                                            <buttonConfiguration key="configuration" style="plain" title="배민스토어" cornerStyle="capsule" buttonSize="small">
+                                                                <fontDescription key="titleFontDescription" type="system" pointSize="13"/>
+                                                                <directionalEdgeInsets key="contentInsets" top="0.0" leading="10" bottom="0.0" trailing="10"/>
+                                                            </buttonConfiguration>
+                                                            <connections>
+                                                                <action selector="clickButton:" destination="DIx-uw-eSS" eventType="touchDown" id="jsd-Ve-2Bw"/>
+                                                            </connections>
+                                                        </button>
+                                                        <button opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="EfH-H5-Mvz">
+                                                            <rect key="frame" x="698.5" y="0.0" width="76.5" height="30"/>
+                                                            <color key="tintColor" systemColor="systemGray2Color"/>
+                                                            <state key="normal" title="Button"/>
+                                                            <buttonConfiguration key="configuration" style="plain" title="쇼핑라이브" cornerStyle="capsule" buttonSize="small">
+                                                                <fontDescription key="titleFontDescription" type="system" pointSize="13"/>
+                                                                <directionalEdgeInsets key="contentInsets" top="0.0" leading="10" bottom="0.0" trailing="10"/>
+                                                            </buttonConfiguration>
+                                                            <connections>
+                                                                <action selector="clickButton:" destination="DIx-uw-eSS" eventType="touchDown" id="aBX-7U-tIU"/>
+                                                            </connections>
+                                                        </button>
+                                                        <button opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="fWM-Pd-DZ3">
+                                                            <rect key="frame" x="862.5" y="0.0" width="65" height="30"/>
+                                                            <color key="tintColor" systemColor="systemGray2Color"/>
+                                                            <state key="normal" title="Button"/>
+                                                            <buttonConfiguration key="configuration" style="plain" title="선물하기" cornerStyle="capsule" buttonSize="small">
+                                                                <fontDescription key="titleFontDescription" type="system" pointSize="13"/>
+                                                                <directionalEdgeInsets key="contentInsets" top="0.0" leading="10" bottom="0.0" trailing="10"/>
+                                                            </buttonConfiguration>
+                                                            <connections>
+                                                                <action selector="clickButton:" destination="DIx-uw-eSS" eventType="touchDown" id="fuU-7R-G9d"/>
+                                                            </connections>
+                                                        </button>
+                                                        <button opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="M0V-yf-XaE">
+                                                            <rect key="frame" x="1015" y="0.0" width="65" height="30"/>
+                                                            <color key="tintColor" systemColor="systemGray2Color"/>
+                                                            <state key="normal" title="Button"/>
+                                                            <buttonConfiguration key="configuration" style="plain" title="전국별미" cornerStyle="capsule" buttonSize="small">
+                                                                <fontDescription key="titleFontDescription" type="system" pointSize="13"/>
+                                                                <directionalEdgeInsets key="contentInsets" top="0.0" leading="10" bottom="0.0" trailing="10"/>
+                                                            </buttonConfiguration>
+                                                            <connections>
+                                                                <action selector="clickButton:" destination="DIx-uw-eSS" eventType="touchDown" id="fpw-tF-W4o"/>
+                                                            </connections>
+                                                        </button>
+                                                    </subviews>
+                                                    <constraints>
+                                                        <constraint firstAttribute="height" constant="30" id="isI-AI-QzO"/>
+                                                    </constraints>
+                                                </stackView>
+                                            </subviews>
+                                            <constraints>
+                                                <constraint firstItem="dhM-IW-SjJ" firstAttribute="leading" secondItem="qBi-3N-XdB" secondAttribute="leading" id="4Iy-Po-15M"/>
+                                                <constraint firstItem="dhM-IW-SjJ" firstAttribute="top" secondItem="Z18-c0-RoU" secondAttribute="top" constant="10" id="Nir-RU-ktX"/>
+                                                <constraint firstAttribute="trailing" secondItem="dhM-IW-SjJ" secondAttribute="trailing" id="w5t-RK-tAF"/>
+                                                <constraint firstItem="Z18-c0-RoU" firstAttribute="bottom" secondItem="dhM-IW-SjJ" secondAttribute="bottom" constant="10" id="xkr-fe-tuh"/>
+                                            </constraints>
+                                            <viewLayoutGuide key="contentLayoutGuide" id="7xb-hC-b56"/>
+                                            <viewLayoutGuide key="frameLayoutGuide" id="Z18-c0-RoU"/>
+                                        </scrollView>
+                                    </subviews>
+                                    <constraints>
+                                        <constraint firstAttribute="bottom" secondItem="qBi-3N-XdB" secondAttribute="bottom" id="WlP-XS-qyu"/>
+                                        <constraint firstAttribute="trailing" secondItem="qBi-3N-XdB" secondAttribute="trailing" id="ugu-au-vOw"/>
+                                        <constraint firstItem="qBi-3N-XdB" firstAttribute="top" secondItem="DIx-uw-eSS" secondAttribute="top" id="vZI-H1-4F4"/>
+                                        <constraint firstItem="qBi-3N-XdB" firstAttribute="leading" secondItem="DIx-uw-eSS" secondAttribute="leading" id="zUc-Ba-g2N"/>
+                                    </constraints>
+                                    <connections>
+                                        <outlet property="BmartB" destination="yXf-bu-M1A" id="Wv4-Yp-Hmv"/>
+                                        <outlet property="baedalB" destination="Que-yS-1HD" id="4GS-ZT-Iaj"/>
+                                        <outlet property="baemin1B" destination="k58-e5-K9u" id="qtO-ig-Jny"/>
+                                        <outlet property="baeminStoreB" destination="A4c-fB-hUc" id="2sT-WZ-OTO"/>
+                                        <outlet property="liveB" destination="EfH-H5-Mvz" id="wBg-C3-oZt"/>
+                                        <outlet property="nationFoodB" destination="M0V-yf-XaE" id="ere-FL-fNd"/>
+                                        <outlet property="pojangB" destination="8F3-7m-jDK" id="aTV-AI-BTW"/>
+                                        <outlet property="presentB" destination="fWM-Pd-DZ3" id="qZn-k2-AZW"/>
+                                        <outletCollection property="listButton" destination="M0V-yf-XaE" collectionClass="NSMutableArray" id="0Q2-Pz-M2s"/>
+                                        <outletCollection property="listButton" destination="fWM-Pd-DZ3" collectionClass="NSMutableArray" id="7GM-Bc-Yub"/>
+                                        <outletCollection property="listButton" destination="EfH-H5-Mvz" collectionClass="NSMutableArray" id="km9-FN-s5H"/>
+                                        <outletCollection property="listButton" destination="A4c-fB-hUc" collectionClass="NSMutableArray" id="kq2-UD-iER"/>
+                                        <outletCollection property="listButton" destination="yXf-bu-M1A" collectionClass="NSMutableArray" id="aUD-yt-368"/>
+                                        <outletCollection property="listButton" destination="k58-e5-K9u" collectionClass="NSMutableArray" id="ILr-uT-o1m"/>
+                                        <outletCollection property="listButton" destination="Que-yS-1HD" collectionClass="NSMutableArray" id="bMt-Ld-XcF"/>
+                                        <outletCollection property="listButton" destination="8F3-7m-jDK" collectionClass="NSMutableArray" id="pyu-ON-MoT"/>
+                                    </connections>
+                                </collectionReusableView>
+                                <connections>
+                                    <outlet property="dataSource" destination="veU-zj-2lA" id="7Rr-r4-7Gy"/>
+                                    <outlet property="delegate" destination="veU-zj-2lA" id="9bb-SA-gDj"/>
+                                </connections>
+                            </collectionView>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="OGn-0h-nBu"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="OGn-0h-nBu" firstAttribute="trailing" secondItem="huf-GG-5Z3" secondAttribute="trailing" id="JKv-hF-ca3"/>
+                            <constraint firstItem="huf-GG-5Z3" firstAttribute="leading" secondItem="OGn-0h-nBu" secondAttribute="leading" id="ksA-ul-wDw"/>
+                            <constraint firstItem="OGn-0h-nBu" firstAttribute="bottom" secondItem="huf-GG-5Z3" secondAttribute="bottom" id="pXY-GZ-VfA"/>
+                            <constraint firstItem="huf-GG-5Z3" firstAttribute="top" secondItem="OGn-0h-nBu" secondAttribute="top" id="shN-4f-Ez6"/>
+                        </constraints>
+                    </view>
+                    <navigationItem key="navigationItem" title="위치" leftItemsSupplementBackButton="YES" id="FkN-JP-H6e">
+                        <barButtonItem key="leftBarButtonItem" style="plain" id="OuW-oC-g7R">
+                            <imageReference key="image" image="arrow.backward" catalog="system" symbolScale="medium"/>
+                            <button key="customView" opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" id="dow-ta-8m4">
+                                <rect key="frame" x="20" y="5" width="92" height="34"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="tintColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <state key="normal" title="Button"/>
+                                <buttonConfiguration key="configuration" style="plain">
+                                    <imageReference key="image" image="arrow.backward" catalog="system" symbolScale="large"/>
+                                </buttonConfiguration>
+                            </button>
+                        </barButtonItem>
+                    </navigationItem>
+                    <simulatedNavigationBarMetrics key="simulatedTopBarMetrics" translucent="NO" prompted="NO"/>
+                    <simulatedTabBarMetrics key="simulatedBottomBarMetrics" translucent="NO"/>
+                    <connections>
+                        <outlet property="mainCV" destination="huf-GG-5Z3" id="qoP-ad-MoC"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="zGX-Qs-hy4" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="869.56521739130437" y="3505.5803571428569"/>
+        </scene>
+        <!--검색-->
+        <scene sceneID="243-SN-MdZ">
+            <objects>
+                <navigationController id="oah-bs-yhO" sceneMemberID="viewController">
+                    <tabBarItem key="tabBarItem" title="검색" image="magnifyingglass" catalog="system" id="aVI-45-umt">
+                        <color key="badgeColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    </tabBarItem>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="Fd5-gV-JTq">
+                        <rect key="frame" x="0.0" y="44" width="414" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <navigationBarAppearance key="scrollEdgeAppearance"/>
+                    </navigationBar>
+                    <connections>
+                        <segue destination="bJc-Em-h5f" kind="relationship" relationship="rootViewController" id="WMb-PC-LGx"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="aip-rl-R88" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-852" y="2792"/>
+        </scene>
+        <!--View Controller-->
+        <scene sceneID="cjl-kL-Pni">
+            <objects>
+                <viewController id="epl-W4-fu5" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="3va-7B-8Gh">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <viewLayoutGuide key="safeArea" id="IhM-2G-Gpn"/>
+                        <color key="backgroundColor" systemColor="systemRedColor"/>
+                    </view>
+                    <navigationItem key="navigationItem" id="Hs8-lI-Th8"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="jBC-Q9-Jbd" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1693" y="3506"/>
+        </scene>
+        <!--View Controller-->
+        <scene sceneID="rVZ-CR-XtC">
+            <objects>
+                <viewController id="Rd8-qs-AWS" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="e1W-YE-qXm">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <viewLayoutGuide key="safeArea" id="7Hf-2H-70N"/>
+                        <color key="backgroundColor" systemColor="systemYellowColor"/>
+                    </view>
+                    <navigationItem key="navigationItem" id="8NB-j1-nrK"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="pZC-kS-J7w" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="2574" y="3506"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="arrow.backward" catalog="system" width="128" height="98"/>
+        <image name="face.smiling" catalog="system" width="128" height="121"/>
+        <image name="heart" catalog="system" width="128" height="109"/>
+        <image name="list.bullet.rectangle.portrait" catalog="system" width="115" height="128"/>
+        <image name="magnifyingglass" catalog="system" width="128" height="115"/>
+        <image name="power.circle.fill" catalog="system" width="128" height="121"/>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+        <systemColor name="systemBlueColor">
+            <color red="0.0" green="0.47843137254901963" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </systemColor>
+        <systemColor name="systemBrownColor">
+            <color red="0.63529411764705879" green="0.51764705882352946" blue="0.36862745098039218" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </systemColor>
+        <systemColor name="systemGray2Color">
+            <color red="0.68235294117647061" green="0.68235294117647061" blue="0.69803921568627447" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </systemColor>
+        <systemColor name="systemRedColor">
+            <color red="1" green="0.23137254901960785" blue="0.18823529411764706" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </systemColor>
+        <systemColor name="systemYellowColor">
+            <color red="1" green="0.80000000000000004" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </systemColor>
+    </resources>
+=======
 <document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="13122.16" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
     <dependencies>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13104.12"/>
@@ -21,4 +469,5 @@
             </objects>
         </scene>
     </scenes>
+>>>>>>> develop
 </document>
