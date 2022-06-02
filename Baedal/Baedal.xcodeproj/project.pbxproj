@@ -7,11 +7,6 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		523067DA2805776A0063CC6F /* BannerView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 523067D92805776A0063CC6F /* BannerView.swift */; };
-		525B76442809B25C00F9596A /* RecommendView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 525B76432809B25C00F9596A /* RecommendView.swift */; };
-		5264F690281A7F5F004AB2ED /* Advertise.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5264F68F281A7F5F004AB2ED /* Advertise.swift */; };
-		52B48C7F280D41DF00020EC5 /* AdvertiseView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 52B48C7E280D41DF00020EC5 /* AdvertiseView.swift */; };
-		52C255C5280BD04100D0E6E9 /* MenuView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 52C255C4280BD04100D0E6E9 /* MenuView.swift */; };
 		52EF7A8227FDAD2700FAB89F /* BaedalApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 52EF7A8127FDAD2700FAB89F /* BaedalApp.swift */; };
 		52EF7A8427FDAD2700FAB89F /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 52EF7A8327FDAD2700FAB89F /* ContentView.swift */; };
 		52EF7A8627FDAD2900FAB89F /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 52EF7A8527FDAD2900FAB89F /* Assets.xcassets */; };
@@ -19,11 +14,6 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
-		523067D92805776A0063CC6F /* BannerView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BannerView.swift; sourceTree = "<group>"; };
-		525B76432809B25C00F9596A /* RecommendView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RecommendView.swift; sourceTree = "<group>"; };
-		5264F68F281A7F5F004AB2ED /* Advertise.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Advertise.swift; sourceTree = "<group>"; };
-		52B48C7E280D41DF00020EC5 /* AdvertiseView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AdvertiseView.swift; sourceTree = "<group>"; };
-		52C255C4280BD04100D0E6E9 /* MenuView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MenuView.swift; sourceTree = "<group>"; };
 		52EF7A7E27FDAD2700FAB89F /* Baedal.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Baedal.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		52EF7A8127FDAD2700FAB89F /* BaedalApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BaedalApp.swift; sourceTree = "<group>"; };
 		52EF7A8327FDAD2700FAB89F /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
@@ -42,14 +32,6 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
-		5264F691281A7F71004AB2ED /* Model */ = {
-			isa = PBXGroup;
-			children = (
-				5264F68F281A7F5F004AB2ED /* Advertise.swift */,
-			);
-			path = Model;
-			sourceTree = "<group>";
-		};
 		52EF7A7527FDAD2600FAB89F = {
 			isa = PBXGroup;
 			children = (
@@ -69,18 +51,8 @@
 		52EF7A8027FDAD2700FAB89F /* Baedal */ = {
 			isa = PBXGroup;
 			children = (
-<<<<<<< HEAD
 				52EF7A8127FDAD2700FAB89F /* BaedalApp.swift */,
 				52EF7A8327FDAD2700FAB89F /* ContentView.swift */,
-=======
-				5264F691281A7F71004AB2ED /* Model */,
-				52EF7A8127FDAD2700FAB89F /* BaedalApp.swift */,
-				52EF7A8327FDAD2700FAB89F /* ContentView.swift */,
-				523067D92805776A0063CC6F /* BannerView.swift */,
-				525B76432809B25C00F9596A /* RecommendView.swift */,
-				52C255C4280BD04100D0E6E9 /* MenuView.swift */,
-				52B48C7E280D41DF00020EC5 /* AdvertiseView.swift */,
->>>>>>> develop
 				52EF7A8527FDAD2900FAB89F /* Assets.xcassets */,
 				52EF7A8727FDAD2900FAB89F /* Preview Content */,
 			);
@@ -165,13 +137,8 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				52C255C5280BD04100D0E6E9 /* MenuView.swift in Sources */,
-				523067DA2805776A0063CC6F /* BannerView.swift in Sources */,
-				5264F690281A7F5F004AB2ED /* Advertise.swift in Sources */,
 				52EF7A8427FDAD2700FAB89F /* ContentView.swift in Sources */,
-				52B48C7F280D41DF00020EC5 /* AdvertiseView.swift in Sources */,
 				52EF7A8227FDAD2700FAB89F /* BaedalApp.swift in Sources */,
-				525B76442809B25C00F9596A /* RecommendView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

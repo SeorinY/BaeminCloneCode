@@ -9,7 +9,6 @@ import UIKit
 
 class ViewController: UIViewController {
 
-<<<<<<< HEAD
     @IBOutlet var mainCV: UICollectionView! {
         didSet {
             mainCV.collectionViewLayout = createLayout()
@@ -67,13 +66,3 @@ extension ViewController: UICollectionViewDelegate, UICollectionViewDataSource {
     }
     
 }
-=======
-    override func viewDidLoad() {
-        super.viewDidLoad()
-        // Do any additional setup after loading the view.
-    }
-
-
-}
-
->>>>>>> develop
