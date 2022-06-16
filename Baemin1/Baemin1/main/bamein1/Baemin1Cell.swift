@@ -40,7 +40,7 @@ class Baemin1Cell: UICollectionViewCell {
     
     let bestData = [
         BestInfo(image: #imageLiteral(resourceName: "뚜레쥬르"), storeName: "뚜레쥬르", fee: "배달팁 3,000원", rate: "5.0", time : "29~30분"),
-        BestInfo(image: #imageLiteral(resourceName: "이디야"), storeName: "이디야", fee: "배달팁 0원~2,000원", rate: "4.9", time: "19~19분"),
+        BestInfo(image: #imageLiteral(resourceName: "뚜레쥬르"), storeName: "이디야", fee: "배달팁 0원~2,000원", rate: "4.9", time: "19~19분"),
         BestInfo(image: #imageLiteral(resourceName: "빽다방"), storeName: "빽다방", fee: "배달팁 2,000원~2,900원", rate: "5.0", time: "20~30분"),
         BestInfo(image: #imageLiteral(resourceName: "BHC치킨"), storeName: "BHC치킨", fee: "배달팁 0원~3,000원", rate: "4.9", time: "21~31분"),
     ]
@@ -148,9 +148,7 @@ class Baemin1Cell: UICollectionViewCell {
 }
 
 extension Baemin1Cell: UICollectionViewDelegate, UICollectionViewDataSource {
-
      func numberOfSections(in collectionView: UICollectionView) -> Int {
-
         return 4
     }
     

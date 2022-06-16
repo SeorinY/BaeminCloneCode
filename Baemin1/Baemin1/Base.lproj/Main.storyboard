@@ -120,21 +120,15 @@
             </objects>
             <point key="canvasLocation" x="859" y="2792"/>
         </scene>
-        <!--View Controller-->
-        <scene sceneID="B60-xK-onF">
+        <!--searchController-->
+        <scene sceneID="lIX-e0-jJt">
             <objects>
-                <viewController id="bJc-Em-h5f" sceneMemberID="viewController">
-                    <view key="view" contentMode="scaleToFill" id="1hD-JY-AxM">
-                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
-                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <viewLayoutGuide key="safeArea" id="TWf-GE-FtH"/>
-                        <color key="backgroundColor" systemColor="systemBlueColor"/>
-                    </view>
-                    <navigationItem key="navigationItem" id="5Yq-VO-ZCZ"/>
-                </viewController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="QR7-Gh-whZ" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+                <viewControllerPlaceholder storyboardName="SearchTab" referencedIdentifier="searchController" id="PrR-nw-DhZ" sceneMemberID="viewController">
+                    <navigationItem key="navigationItem" id="udJ-Gg-y8E"/>
+                </viewControllerPlaceholder>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="yJV-tS-kAt" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-852" y="3506"/>
+            <point key="canvasLocation" x="-851" y="3183"/>
         </scene>
         <!--View Controller-->
         <scene sceneID="mfU-cv-hPc">
@@ -379,7 +373,7 @@
                         <navigationBarAppearance key="scrollEdgeAppearance"/>
                     </navigationBar>
                     <connections>
-                        <segue destination="bJc-Em-h5f" kind="relationship" relationship="rootViewController" id="WMb-PC-LGx"/>
+                        <segue destination="PrR-nw-DhZ" kind="relationship" relationship="rootViewController" id="Eat-JO-FVv"/>
                     </connections>
                 </navigationController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="aip-rl-R88" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
@@ -428,9 +422,6 @@
         <image name="power.circle.fill" catalog="system" width="128" height="121"/>
         <systemColor name="systemBackgroundColor">
             <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-        </systemColor>
-        <systemColor name="systemBlueColor">
-            <color red="0.0" green="0.47843137254901963" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
         </systemColor>
         <systemColor name="systemBrownColor">
             <color red="0.63529411764705879" green="0.51764705882352946" blue="0.36862745098039218" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
