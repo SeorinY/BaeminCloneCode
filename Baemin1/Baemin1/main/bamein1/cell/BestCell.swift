@@ -20,14 +20,14 @@ class BestCell: UICollectionViewCell {
     static let bestCellId = "bestCell"
     
     let storeImg:UIImageView = {
-          let imageView=UIImageView()
-          imageView.translatesAutoresizingMaskIntoConstraints = false
-          imageView.contentMode = .scaleAspectFit
-          imageView.layer.cornerRadius = 10
+        let imageView=UIImageView()
+        imageView.translatesAutoresizingMaskIntoConstraints = false
+        imageView.contentMode = .scaleAspectFit
+        imageView.layer.cornerRadius = 10
         imageView.layer.borderWidth = 0.1
-          imageView.clipsToBounds = true
-          return imageView
-      }()
+        imageView.clipsToBounds = true
+        return imageView
+    }()
       
       let storeNameL: UILabel = {
           let label = UILabel()
@@ -79,14 +79,13 @@ class BestCell: UICollectionViewCell {
         timeB.setTitle(data.time, for: .normal)
     }
     
-    override init(frame:CGRect){
-        super.init(frame:frame)
+    func configurationLayout() {
         contentView.addSubview(storeImg)
         contentView.addSubview(storeNameL)
         contentView.addSubview(feeL)
         contentView.addSubview(rateB)
         contentView.addSubview(timeB)
-        
+    
         storeImg.topAnchor.constraint(equalTo: contentView.topAnchor).isActive=true
         storeImg.leadingAnchor.constraint(equalTo: contentView.leadingAnchor).isActive=true
         storeImg.trailingAnchor.constraint(equalTo: contentView.trailingAnchor).isActive=true
@@ -96,6 +95,7 @@ class BestCell: UICollectionViewCell {
         storeNameL.topAnchor.constraint(equalTo: storeImg.bottomAnchor, constant: 5).isActive=true
         storeNameL.leadingAnchor.constraint(equalTo: contentView.leadingAnchor).isActive=true
         storeNameL.heightAnchor.constraint(equalToConstant: 20).isActive = true
+        debugPrint(storeNameL)
         
         feeL.topAnchor.constraint(equalTo: storeNameL.bottomAnchor,constant: 5).isActive=true
         feeL.leadingAnchor.constraint(equalTo: contentView.leadingAnchor).isActive=true
@@ -114,8 +114,14 @@ class BestCell: UICollectionViewCell {
         timeB.heightAnchor.constraint(equalToConstant: 20).isActive = true
     }
     
+    override init(frame:CGRect){
+        super.init(frame:frame)
+        configurationLayout()
+    }
+    
     required init?(coder aDecoder : NSCoder) {
         super.init(coder : aDecoder)
+        configurationLayout()
     }
 }
 

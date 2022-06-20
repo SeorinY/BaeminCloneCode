@@ -9,7 +9,7 @@ import UIKit
 
 class Baemin1Cell: UICollectionViewCell {
     static let baemin1CellId = "baemin1Cell"
-
+    let instanceOfBest: BestCollectionViewCell = BestCollectionViewCell()
     var baemin1CV: UICollectionView = {
         let layout = UICollectionViewFlowLayout()
         let collectionView = UICollectionView(frame: .zero, collectionViewLayout: layout)
@@ -36,13 +36,6 @@ class Baemin1Cell: UICollectionViewCell {
         MenuInfo(name:"족발,보쌈",image: #imageLiteral(resourceName: "pig")),
         MenuInfo(name:"아시안",image: #imageLiteral(resourceName: "chinese")),
         MenuInfo(name:"버거",image: #imageLiteral(resourceName: "burger")),
-    ]
-    
-    let bestData = [
-        BestInfo(image: #imageLiteral(resourceName: "뚜레쥬르"), storeName: "뚜레쥬르", fee: "배달팁 3,000원", rate: "5.0", time : "29~30분"),
-        BestInfo(image: #imageLiteral(resourceName: "뚜레쥬르"), storeName: "이디야", fee: "배달팁 0원~2,000원", rate: "4.9", time: "19~19분"),
-        BestInfo(image: #imageLiteral(resourceName: "빽다방"), storeName: "빽다방", fee: "배달팁 2,000원~2,900원", rate: "5.0", time: "20~30분"),
-        BestInfo(image: #imageLiteral(resourceName: "BHC치킨"), storeName: "BHC치킨", fee: "배달팁 0원~3,000원", rate: "4.9", time: "21~31분"),
     ]
     
     let storeData = [
@@ -98,20 +91,7 @@ class Baemin1Cell: UICollectionViewCell {
     
                  return section
              } else if sectionNumber == 2 {
-                 let item = NSCollectionLayoutItem.init(layoutSize: .init(widthDimension: .fractionalWidth(1), heightDimension: .fractionalHeight(1)))
-                 item.contentInsets.trailing = 10
-                 
-                 let group = NSCollectionLayoutGroup.horizontal(layoutSize: .init(widthDimension: .fractionalWidth(0.42), heightDimension: .absolute(230)), subitems: [item])
-                 
-                 let section = NSCollectionLayoutSection(group: group)
-                 section.orthogonalScrollingBehavior = .continuous
-                 section.contentInsets.leading = 16
-                 section.contentInsets.bottom = 20
-
-                 section.boundarySupplementaryItems = [
-                     .init(layoutSize: .init(widthDimension: .fractionalWidth(1), heightDimension: .absolute(50)),elementKind: BestHeader.bestHeaderId,alignment: . topLeading)
-                 ]
-                 return section
+                 return self.instanceOfBest.makeSection()
              } else {
                  
                  let item = NSCollectionLayoutItem(layoutSize: .init(widthDimension: .fractionalWidth(1), heightDimension: .fractionalHeight(1)))
@@ -120,7 +100,7 @@ class Baemin1Cell: UICollectionViewCell {
                  item.contentInsets.bottom = 25
                      
                  let group = NSCollectionLayoutGroup.horizontal(layoutSize: .init(widthDimension: .fractionalWidth(1), heightDimension: .absolute(250)), subitems: [item])
-                               
+                 
                  let section = NSCollectionLayoutSection(group: group)
                  
                  let pagingheader = NSCollectionLayoutBoundarySupplementaryItem(layoutSize: .init(widthDimension: .fractionalWidth(1), heightDimension: .absolute(50)),elementKind: StoreHeader.storeHeaderId,alignment: . topLeading)
@@ -154,8 +134,7 @@ extension Baemin1Cell: UICollectionViewDelegate, UICollectionViewDataSource {
     
     func collectionView(_ collectionView: UICollectionView, viewForSupplementaryElementOfKind kind: String, at indexPath: IndexPath) -> UICollectionReusableView {
         if indexPath.section == 2{
-            let header = collectionView.dequeueReusableSupplementaryView(ofKind: kind, withReuseIdentifier: "BheaderId", for: indexPath) as! BestHeader
-            return header
+            return self.instanceOfBest.makeHeader(collectionView: collectionView, viewForSupplementaryElementOfKind: kind, at: indexPath)
         } else if indexPath.section == 3 {
             let header = collectionView.dequeueReusableSupplementaryView(ofKind: kind, withReuseIdentifier: "SheaderId", for: indexPath) as! StoreHeader
             return header
@@ -171,7 +150,7 @@ extension Baemin1Cell: UICollectionViewDelegate, UICollectionViewDataSource {
         } else if section == 1 {
             return menuData.count
         } else if section == 2 {
-            return bestData.count
+            return self.instanceOfBest.bestData.count
         } else {
             return storeData.count
         }
@@ -189,10 +168,7 @@ extension Baemin1Cell: UICollectionViewDelegate, UICollectionViewDataSource {
             cell.setData(with: menuData[indexPath.row])
             return cell
         } else if indexPath.section == 2 {
-            guard let cell = collectionView.dequeueReusableCell(withReuseIdentifier: BestCell.bestCellId, for: indexPath) as? BestCell else { return UICollectionViewCell() }
-
-            cell.setData(with: bestData[indexPath.row])
-            return cell
+            return self.instanceOfBest.makeCell(collectionView: collectionView, cellForItemAt: indexPath)
         } else {
             guard let cell = collectionView.dequeueReusableCell(withReuseIdentifier: StoreCell.storeCellId, for: indexPath) as? StoreCell else { return UICollectionViewCell() }
             

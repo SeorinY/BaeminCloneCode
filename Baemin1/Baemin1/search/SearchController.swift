@@ -9,8 +9,14 @@ import UIKit
 
 class SearchController: UIViewController {
 
+    @IBOutlet var searchBestCV: UICollectionView! {
+        didSet {
+            searchBestCV.collectionViewLayout = createLayout()
+        }
+    }
     @IBOutlet var bestTo5: UITableView!
     @IBOutlet var bestTo10: UITableView!
+    let instanceOfBest: BestCollectionViewCell = BestCollectionViewCell()
     
     let searchRateDataTo5 = [
         BestSearchInfo(rate: 1, name: "교촌치킨", change: 0),
@@ -28,22 +34,17 @@ class SearchController: UIViewController {
         BestSearchInfo(rate: 10, name: "지코바", change: 1)
     ]
     
-    override func viewDidLoad() {
-        super.viewDidLoad()
-
-        // Do any additional setup after loading the view.
+    func createLayout() -> UICollectionViewCompositionalLayout {
+        let layout = UICollectionViewCompositionalLayout(section: self.instanceOfBest.makeSection())
+        return layout
     }
     
-
-    /*
-    // MARK: - Navigation
-
-    // In a storyboard-based application, you will often want to do a little preparation before navigation
-    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-        // Get the new view controller using segue.destination.
-        // Pass the selected object to the new view controller.
+    
+    override func viewDidLoad() {
+        super.viewDidLoad()
+        // Do any additional setup after loading the view.
+        searchBestCV.register(BestHeader.self,forSupplementaryViewOfKind:BestHeader.bestHeaderId,withReuseIdentifier:"BheaderId")
     }
-    */
 
 }
 
@@ -63,4 +64,18 @@ extension SearchController: UITableViewDelegate, UITableViewDataSource {
         return cell
     }
     
+}
+
+extension SearchController: UICollectionViewDelegate, UICollectionViewDataSource {
+    func collectionView(_ collectionView: UICollectionView, numberOfItemsInSection section: Int) -> Int {
+        return self.instanceOfBest.bestData.count
+    }
+    
+    func collectionView(_ collectionView: UICollectionView, cellForItemAt indexPath: IndexPath) -> UICollectionViewCell {
+        return self.instanceOfBest.makeCell(collectionView: collectionView, cellForItemAt: indexPath)
+    }
+    
+    func collectionView(_ collectionView: UICollectionView, viewForSupplementaryElementOfKind kind: String, at indexPath: IndexPath) -> UICollectionReusableView {
+        return self.instanceOfBest.makeHeader(collectionView: collectionView, viewForSupplementaryElementOfKind: kind, at: indexPath)
+    }
 }
