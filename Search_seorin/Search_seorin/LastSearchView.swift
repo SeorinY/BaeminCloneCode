@@ -8,20 +8,20 @@
 import SwiftUI
 
 struct LastSearchView: View {
+    @State private var showAdvertisement = false
     let searchHistory = ["커피", "치킨", "피자", "떡볶이", "햄버거"]
-    var colWidth = CGFloat(100)
+//    var colWidth = CGFloat(100)
     var body: some View {
-        
         VStack {
-            LazyVGrid(columns: [
-                GridItem(.fixed(colWidth)),
-                GridItem(.fixed(colWidth)),
-                GridItem(.fixed(colWidth))
-            ]){
+            HStack{
                 Text("최근 검색어")
                 Spacer()
-                Button(action: {print("hello")}){
+                Button(action: {print("전체삭제")}){
                     Text("전체삭제")
+                        .font(.system(size : 10))
+                        .foregroundColor(.black)
+                        .padding(5)
+                        .background(Color(.secondarySystemBackground))
                         .clipShape(Capsule())
                 }
             }
@@ -29,19 +29,38 @@ struct LastSearchView: View {
                 HStack{
                     ForEach(0 ..< searchHistory.count) { property in
                         let keyword = searchHistory[property]
-                        NavigationLink(destination: Text(keyword)){
-                            Text(keyword)
-                                .padding()
-                                .background(Color.yellow)
-                                .clipShape(Capsule())
-//                                .foregroundColor(.yellow)
+                        HStack{
+                            NavigationLink(destination: Text(keyword)){
+                                Text(" \(keyword)")
+                                    .font(.system(size : 15))
+                            }
+                            Button(action: {print("x")}){
+                                Image(systemName: "xmark")
+                                    .resizable()
+                                    .frame(width: 10, height: 10)
+                            }
                         }
+                        .padding(5)
+                        .background(Color("buttonbackgroundColor"))
+                        .foregroundColor(Color("buttonTextColor"))
+                        .clipShape(Capsule())
                     }
                 }
             }
-            //advertise 이름의 이미지 넣기
-            LocalBestRestaurantView()
+            Button(action: {
+                showAdvertisement = true
+            }){
+                Image("advertiseImage")
+                    .resizable()
+                    .aspectRatio(contentMode: .fit)
+                    .cornerRadius(10.0)
+            }
+            .sheet(isPresented: self.$showAdvertisement){
+                Image("advertiseImage")
+                    .resizable()
+            }
         }
+        .padding()
     }
 }
 
