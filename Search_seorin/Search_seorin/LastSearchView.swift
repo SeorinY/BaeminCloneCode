@@ -15,6 +15,7 @@ struct LastSearchView: View {
         VStack {
             HStack{
                 Text("최근 검색어")
+                    .fontWeight(.semibold)
                 Spacer()
                 Button(action: {print("전체삭제")}){
                     Text("전체삭제")
@@ -31,14 +32,17 @@ struct LastSearchView: View {
                         let keyword = searchHistory[property]
                         HStack{
                             NavigationLink(destination: Text(keyword)){
-                                Text(" \(keyword)")
+                                Text(keyword)
                                     .font(.system(size : 15))
+                                    .padding(.leading, 10.0)
+                                    
                             }
                             Button(action: {print("x")}){
                                 Image(systemName: "xmark")
                                     .resizable()
                                     .frame(width: 10, height: 10)
                             }
+                            .padding(.trailing, 10.0)
                         }
                         .padding(5)
                         .background(Color("buttonbackgroundColor"))

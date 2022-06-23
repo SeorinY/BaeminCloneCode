@@ -11,6 +11,7 @@
 		522DB6002845CCB6006E605C /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 522DB5FF2845CCB6006E605C /* ContentView.swift */; };
 		522DB6022845CCB7006E605C /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 522DB6012845CCB7006E605C /* Assets.xcassets */; };
 		522DB6052845CCB7006E605C /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 522DB6042845CCB7006E605C /* Preview Assets.xcassets */; };
+		5282BE852864929F00282065 /* RecomendKeywordView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5282BE842864929F00282065 /* RecomendKeywordView.swift */; };
 		52A5B02A2849C07D0062F754 /* LastSearchView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 52A5B0292849C07D0062F754 /* LastSearchView.swift */; };
 		52A5B02C2849C53B0062F754 /* LocalBestRestaurantView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 52A5B02B2849C53B0062F754 /* LocalBestRestaurantView.swift */; };
 		52A5B02F2849C6410062F754 /* LocalRestaurant.swift in Sources */ = {isa = PBXBuildFile; fileRef = 52A5B02E2849C6410062F754 /* LocalRestaurant.swift */; };
@@ -25,6 +26,7 @@
 		522DB5FF2845CCB6006E605C /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
 		522DB6012845CCB7006E605C /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		522DB6042845CCB7006E605C /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		5282BE842864929F00282065 /* RecomendKeywordView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RecomendKeywordView.swift; sourceTree = "<group>"; };
 		52A5B0292849C07D0062F754 /* LastSearchView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LastSearchView.swift; sourceTree = "<group>"; };
 		52A5B02B2849C53B0062F754 /* LocalBestRestaurantView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LocalBestRestaurantView.swift; sourceTree = "<group>"; };
 		52A5B02E2849C6410062F754 /* LocalRestaurant.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LocalRestaurant.swift; sourceTree = "<group>"; };
@@ -67,6 +69,7 @@
 				522DB5FD2845CCB6006E605C /* Search_seorinApp.swift */,
 				522DB5FF2845CCB6006E605C /* ContentView.swift */,
 				52A5B0292849C07D0062F754 /* LastSearchView.swift */,
+				5282BE842864929F00282065 /* RecomendKeywordView.swift */,
 				52A5B02B2849C53B0062F754 /* LocalBestRestaurantView.swift */,
 				52A5B0302849C7120062F754 /* RestuarantView.swift */,
 				52E33A9728634A3A00DBD117 /* MostSearchView.swift */,
@@ -165,6 +168,7 @@
 			files = (
 				522DB6002845CCB6006E605C /* ContentView.swift in Sources */,
 				52A5B0312849C7120062F754 /* RestuarantView.swift in Sources */,
+				5282BE852864929F00282065 /* RecomendKeywordView.swift in Sources */,
 				52A5B02C2849C53B0062F754 /* LocalBestRestaurantView.swift in Sources */,
 				52A5B02F2849C6410062F754 /* LocalRestaurant.swift in Sources */,
 				52E33A9A28634B9800DBD117 /* MostSearch.swift in Sources */,

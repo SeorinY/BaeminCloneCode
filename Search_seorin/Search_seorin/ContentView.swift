@@ -14,9 +14,15 @@ struct ContentView: View {
             ScrollView(.vertical, showsIndicators: false){
                 VStack{
                     LastSearchView()
+                        .background(.white)
                     LocalBestRestaurantView()
+                        .background(.white)
                     MostSearchView()
+                        .background(.white)
+                    RecomendKeywordView()
+                        .background(.white)
                 }
+                .background(Color(.secondarySystemBackground))
             }
             .toolbar{
                 ToolbarItem(placement: .navigationBarLeading){

@@ -18,6 +18,7 @@ struct LocalBestRestaurantView: View {
         VStack{
             HStack{
                 Text("요즘 우리동네 인기 맛집")
+                    .fontWeight(.semibold)
                 Image("house")
                     .resizable()
                     .frame(width: 20, height: 20)

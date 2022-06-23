@@ -21,6 +21,7 @@ struct RestuarantView: View {
                 .cornerRadius(10.0)
             HStack{
                 Text(restaurant!.name)
+                    .fontWeight(.semibold)
                     .lineLimit(1)
                     .fixedSize(horizontal: false, vertical: true)
                 Spacer()

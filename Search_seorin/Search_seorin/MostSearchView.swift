@@ -24,8 +24,7 @@ struct MostSearchView: View {
                     .frame(width: 70 , height: 70)
             }
             HStack{
-                
-                VStack(alignment: .leading, spacing: 10){
+                VStack(alignment: .leading, spacing: 30){
                     ForEach(0..<5) {property in
                         NavigationLink(destination: Text(mostSearchList[property].name)){
                             HStack{
@@ -47,8 +46,7 @@ struct MostSearchView: View {
                 }
                 .foregroundColor(.black)
                 Spacer()
-                
-                VStack(alignment: .leading, spacing: 10){
+                VStack(alignment: .leading, spacing: 30){
                     ForEach(5..<10) {property in
                         NavigationLink(destination:Text(mostSearchList[property].name)){
                             HStack{
