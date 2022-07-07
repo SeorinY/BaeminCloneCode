@@ -1,10 +1,3 @@
-//
-//  RecomendKeywordView.swift
-//  Search_seorin
-//
-//  Created by Mac Book Pro on 2022/06/23.
-//
-
 import SwiftUI
 
 struct RecomendKeywordView: View {

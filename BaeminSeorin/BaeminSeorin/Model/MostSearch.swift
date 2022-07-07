@@ -1,10 +1,3 @@
-//
-//  MostSearch.swift
-//  Search_seorin
-//
-//  Created by Mac Book Pro on 2022/06/22.
-//
-
 import Foundation
 
 class MostSearch{
@@ -18,5 +11,4 @@ class MostSearch{
         self.name = name
         self.image = image
     }
-    
 }

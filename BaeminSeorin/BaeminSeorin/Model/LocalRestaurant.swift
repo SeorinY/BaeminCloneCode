@@ -1,10 +1,3 @@
-//
-//  LocalRestaurant.swift
-//  Search_seorin
-//
-//  Created by Mac Book Pro on 2022/06/03.
-//
-
 import Foundation
 
 class Restaurant{

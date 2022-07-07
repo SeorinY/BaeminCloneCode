@@ -7,36 +7,40 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		522DB5FE2845CCB6006E605C /* Search_seorinApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 522DB5FD2845CCB6006E605C /* Search_seorinApp.swift */; };
-		522DB6002845CCB6006E605C /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 522DB5FF2845CCB6006E605C /* ContentView.swift */; };
-		522DB6022845CCB7006E605C /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 522DB6012845CCB7006E605C /* Assets.xcassets */; };
-		522DB6052845CCB7006E605C /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 522DB6042845CCB7006E605C /* Preview Assets.xcassets */; };
-		5282BE852864929F00282065 /* RecomendKeywordView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5282BE842864929F00282065 /* RecomendKeywordView.swift */; };
-		52A5B02A2849C07D0062F754 /* LastSearchView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 52A5B0292849C07D0062F754 /* LastSearchView.swift */; };
-		52A5B02C2849C53B0062F754 /* LocalBestRestaurantView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 52A5B02B2849C53B0062F754 /* LocalBestRestaurantView.swift */; };
-		52A5B02F2849C6410062F754 /* LocalRestaurant.swift in Sources */ = {isa = PBXBuildFile; fileRef = 52A5B02E2849C6410062F754 /* LocalRestaurant.swift */; };
-		52A5B0312849C7120062F754 /* RestuarantView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 52A5B0302849C7120062F754 /* RestuarantView.swift */; };
-		52E33A9828634A3A00DBD117 /* MostSearchView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 52E33A9728634A3A00DBD117 /* MostSearchView.swift */; };
-		52E33A9A28634B9800DBD117 /* MostSearch.swift in Sources */ = {isa = PBXBuildFile; fileRef = 52E33A9928634B9800DBD117 /* MostSearch.swift */; };
+		528FE937286EACEA00EB3B61 /* BaeminSeorinApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 528FE936286EACEA00EB3B61 /* BaeminSeorinApp.swift */; };
+		528FE939286EACEA00EB3B61 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 528FE938286EACEA00EB3B61 /* ContentView.swift */; };
+		528FE93B286EACEE00EB3B61 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 528FE93A286EACEE00EB3B61 /* Assets.xcassets */; };
+		528FE93E286EACEE00EB3B61 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 528FE93D286EACEE00EB3B61 /* Preview Assets.xcassets */; };
+		528FE958286EB6E100EB3B61 /* RecomendKeywordView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 528FE957286EB6E100EB3B61 /* RecomendKeywordView.swift */; };
+		528FE95A286EB6E900EB3B61 /* LastSearchView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 528FE959286EB6E900EB3B61 /* LastSearchView.swift */; };
+		528FE95C286EB6EF00EB3B61 /* BannerView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 528FE95B286EB6EF00EB3B61 /* BannerView.swift */; };
+		528FE95E286EB6F600EB3B61 /* LocalBestRestaurantView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 528FE95D286EB6F600EB3B61 /* LocalBestRestaurantView.swift */; };
+		528FE960286EB6FF00EB3B61 /* RestuarantView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 528FE95F286EB6FF00EB3B61 /* RestuarantView.swift */; };
+		528FE962286EB70400EB3B61 /* MostSearchView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 528FE961286EB70400EB3B61 /* MostSearchView.swift */; };
+		528FE96F286EB85500EB3B61 /* MostSearch.swift in Sources */ = {isa = PBXBuildFile; fileRef = 528FE96E286EB85500EB3B61 /* MostSearch.swift */; };
+		528FE971286EB85D00EB3B61 /* Banner.swift in Sources */ = {isa = PBXBuildFile; fileRef = 528FE970286EB85D00EB3B61 /* Banner.swift */; };
+		528FE973286EB86600EB3B61 /* LocalRestaurant.swift in Sources */ = {isa = PBXBuildFile; fileRef = 528FE972286EB86600EB3B61 /* LocalRestaurant.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
-		522DB5FA2845CCB6006E605C /* Search_seorin.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Search_seorin.app; sourceTree = BUILT_PRODUCTS_DIR; };
-		522DB5FD2845CCB6006E605C /* Search_seorinApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Search_seorinApp.swift; sourceTree = "<group>"; };
-		522DB5FF2845CCB6006E605C /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
-		522DB6012845CCB7006E605C /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
-		522DB6042845CCB7006E605C /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
-		5282BE842864929F00282065 /* RecomendKeywordView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RecomendKeywordView.swift; sourceTree = "<group>"; };
-		52A5B0292849C07D0062F754 /* LastSearchView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LastSearchView.swift; sourceTree = "<group>"; };
-		52A5B02B2849C53B0062F754 /* LocalBestRestaurantView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LocalBestRestaurantView.swift; sourceTree = "<group>"; };
-		52A5B02E2849C6410062F754 /* LocalRestaurant.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LocalRestaurant.swift; sourceTree = "<group>"; };
-		52A5B0302849C7120062F754 /* RestuarantView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RestuarantView.swift; sourceTree = "<group>"; };
-		52E33A9728634A3A00DBD117 /* MostSearchView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MostSearchView.swift; sourceTree = "<group>"; };
-		52E33A9928634B9800DBD117 /* MostSearch.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MostSearch.swift; sourceTree = "<group>"; };
+		528FE933286EACEA00EB3B61 /* BaeminSeorin.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = BaeminSeorin.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		528FE936286EACEA00EB3B61 /* BaeminSeorinApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BaeminSeorinApp.swift; sourceTree = "<group>"; };
+		528FE938286EACEA00EB3B61 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
+		528FE93A286EACEE00EB3B61 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		528FE93D286EACEE00EB3B61 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		528FE957286EB6E100EB3B61 /* RecomendKeywordView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RecomendKeywordView.swift; sourceTree = "<group>"; };
+		528FE959286EB6E900EB3B61 /* LastSearchView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LastSearchView.swift; sourceTree = "<group>"; };
+		528FE95B286EB6EF00EB3B61 /* BannerView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BannerView.swift; sourceTree = "<group>"; };
+		528FE95D286EB6F600EB3B61 /* LocalBestRestaurantView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LocalBestRestaurantView.swift; sourceTree = "<group>"; };
+		528FE95F286EB6FF00EB3B61 /* RestuarantView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RestuarantView.swift; sourceTree = "<group>"; };
+		528FE961286EB70400EB3B61 /* MostSearchView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MostSearchView.swift; sourceTree = "<group>"; };
+		528FE96E286EB85500EB3B61 /* MostSearch.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MostSearch.swift; sourceTree = "<group>"; };
+		528FE970286EB85D00EB3B61 /* Banner.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Banner.swift; sourceTree = "<group>"; };
+		528FE972286EB86600EB3B61 /* LocalRestaurant.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LocalRestaurant.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
-		522DB5F72845CCB6006E605C /* Frameworks */ = {
+		528FE930286EACEA00EB3B61 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -46,52 +50,54 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
-		522DB5F12845CCB6006E605C = {
+		528FE92A286EACEA00EB3B61 = {
 			isa = PBXGroup;
 			children = (
-				522DB5FC2845CCB6006E605C /* Search_seorin */,
-				522DB5FB2845CCB6006E605C /* Products */,
+				528FE935286EACEA00EB3B61 /* BaeminSeorin */,
+				528FE934286EACEA00EB3B61 /* Products */,
 			);
 			sourceTree = "<group>";
 		};
-		522DB5FB2845CCB6006E605C /* Products */ = {
+		528FE934286EACEA00EB3B61 /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				522DB5FA2845CCB6006E605C /* Search_seorin.app */,
+				528FE933286EACEA00EB3B61 /* BaeminSeorin.app */,
 			);
 			name = Products;
 			sourceTree = "<group>";
 		};
-		522DB5FC2845CCB6006E605C /* Search_seorin */ = {
+		528FE935286EACEA00EB3B61 /* BaeminSeorin */ = {
 			isa = PBXGroup;
 			children = (
-				52A5B02D2849C62B0062F754 /* Model */,
-				522DB5FD2845CCB6006E605C /* Search_seorinApp.swift */,
-				522DB5FF2845CCB6006E605C /* ContentView.swift */,
-				52A5B0292849C07D0062F754 /* LastSearchView.swift */,
-				5282BE842864929F00282065 /* RecomendKeywordView.swift */,
-				52A5B02B2849C53B0062F754 /* LocalBestRestaurantView.swift */,
-				52A5B0302849C7120062F754 /* RestuarantView.swift */,
-				52E33A9728634A3A00DBD117 /* MostSearchView.swift */,
-				522DB6012845CCB7006E605C /* Assets.xcassets */,
-				522DB6032845CCB7006E605C /* Preview Content */,
+				528FE96B286EB81600EB3B61 /* Model */,
+				528FE936286EACEA00EB3B61 /* BaeminSeorinApp.swift */,
+				528FE938286EACEA00EB3B61 /* ContentView.swift */,
+				528FE957286EB6E100EB3B61 /* RecomendKeywordView.swift */,
+				528FE959286EB6E900EB3B61 /* LastSearchView.swift */,
+				528FE95B286EB6EF00EB3B61 /* BannerView.swift */,
+				528FE95D286EB6F600EB3B61 /* LocalBestRestaurantView.swift */,
+				528FE95F286EB6FF00EB3B61 /* RestuarantView.swift */,
+				528FE961286EB70400EB3B61 /* MostSearchView.swift */,
+				528FE93A286EACEE00EB3B61 /* Assets.xcassets */,
+				528FE93C286EACEE00EB3B61 /* Preview Content */,
 			);
-			path = Search_seorin;
+			path = BaeminSeorin;
 			sourceTree = "<group>";
 		};
-		522DB6032845CCB7006E605C /* Preview Content */ = {
+		528FE93C286EACEE00EB3B61 /* Preview Content */ = {
 			isa = PBXGroup;
 			children = (
-				522DB6042845CCB7006E605C /* Preview Assets.xcassets */,
+				528FE93D286EACEE00EB3B61 /* Preview Assets.xcassets */,
 			);
 			path = "Preview Content";
 			sourceTree = "<group>";
 		};
-		52A5B02D2849C62B0062F754 /* Model */ = {
+		528FE96B286EB81600EB3B61 /* Model */ = {
 			isa = PBXGroup;
 			children = (
-				52A5B02E2849C6410062F754 /* LocalRestaurant.swift */,
-				52E33A9928634B9800DBD117 /* MostSearch.swift */,
+				528FE96E286EB85500EB3B61 /* MostSearch.swift */,
+				528FE970286EB85D00EB3B61 /* Banner.swift */,
+				528FE972286EB86600EB3B61 /* LocalRestaurant.swift */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -99,39 +105,39 @@
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
-		522DB5F92845CCB6006E605C /* Search_seorin */ = {
+		528FE932286EACEA00EB3B61 /* BaeminSeorin */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 522DB6082845CCB7006E605C /* Build configuration list for PBXNativeTarget "Search_seorin" */;
+			buildConfigurationList = 528FE941286EACEE00EB3B61 /* Build configuration list for PBXNativeTarget "BaeminSeorin" */;
 			buildPhases = (
-				522DB5F62845CCB6006E605C /* Sources */,
-				522DB5F72845CCB6006E605C /* Frameworks */,
-				522DB5F82845CCB6006E605C /* Resources */,
+				528FE92F286EACEA00EB3B61 /* Sources */,
+				528FE930286EACEA00EB3B61 /* Frameworks */,
+				528FE931286EACEA00EB3B61 /* Resources */,
 			);
 			buildRules = (
 			);
 			dependencies = (
 			);
-			name = Search_seorin;
-			productName = Search_seorin;
-			productReference = 522DB5FA2845CCB6006E605C /* Search_seorin.app */;
+			name = BaeminSeorin;
+			productName = BaeminSeorin;
+			productReference = 528FE933286EACEA00EB3B61 /* BaeminSeorin.app */;
 			productType = "com.apple.product-type.application";
 		};
 /* End PBXNativeTarget section */
 
 /* Begin PBXProject section */
-		522DB5F22845CCB6006E605C /* Project object */ = {
+		528FE92B286EACEA00EB3B61 /* Project object */ = {
 			isa = PBXProject;
 			attributes = {
 				BuildIndependentTargetsInParallel = 1;
 				LastSwiftUpdateCheck = 1330;
 				LastUpgradeCheck = 1330;
 				TargetAttributes = {
-					522DB5F92845CCB6006E605C = {
+					528FE932286EACEA00EB3B61 = {
 						CreatedOnToolsVersion = 13.3;
 					};
 				};
 			};
-			buildConfigurationList = 522DB5F52845CCB6006E605C /* Build configuration list for PBXProject "Search_seorin" */;
+			buildConfigurationList = 528FE92E286EACEA00EB3B61 /* Build configuration list for PBXProject "BaeminSeorin" */;
 			compatibilityVersion = "Xcode 13.0";
 			developmentRegion = en;
 			hasScannedForEncodings = 0;
@@ -139,49 +145,51 @@
 				en,
 				Base,
 			);
-			mainGroup = 522DB5F12845CCB6006E605C;
-			productRefGroup = 522DB5FB2845CCB6006E605C /* Products */;
+			mainGroup = 528FE92A286EACEA00EB3B61;
+			productRefGroup = 528FE934286EACEA00EB3B61 /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
-				522DB5F92845CCB6006E605C /* Search_seorin */,
+				528FE932286EACEA00EB3B61 /* BaeminSeorin */,
 			);
 		};
 /* End PBXProject section */
 
 /* Begin PBXResourcesBuildPhase section */
-		522DB5F82845CCB6006E605C /* Resources */ = {
+		528FE931286EACEA00EB3B61 /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				522DB6052845CCB7006E605C /* Preview Assets.xcassets in Resources */,
-				522DB6022845CCB7006E605C /* Assets.xcassets in Resources */,
+				528FE93E286EACEE00EB3B61 /* Preview Assets.xcassets in Resources */,
+				528FE93B286EACEE00EB3B61 /* Assets.xcassets in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
-		522DB5F62845CCB6006E605C /* Sources */ = {
+		528FE92F286EACEA00EB3B61 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				522DB6002845CCB6006E605C /* ContentView.swift in Sources */,
-				52A5B0312849C7120062F754 /* RestuarantView.swift in Sources */,
-				5282BE852864929F00282065 /* RecomendKeywordView.swift in Sources */,
-				52A5B02C2849C53B0062F754 /* LocalBestRestaurantView.swift in Sources */,
-				52A5B02F2849C6410062F754 /* LocalRestaurant.swift in Sources */,
-				52E33A9A28634B9800DBD117 /* MostSearch.swift in Sources */,
-				52A5B02A2849C07D0062F754 /* LastSearchView.swift in Sources */,
-				52E33A9828634A3A00DBD117 /* MostSearchView.swift in Sources */,
-				522DB5FE2845CCB6006E605C /* Search_seorinApp.swift in Sources */,
+				528FE96F286EB85500EB3B61 /* MostSearch.swift in Sources */,
+				528FE973286EB86600EB3B61 /* LocalRestaurant.swift in Sources */,
+				528FE95C286EB6EF00EB3B61 /* BannerView.swift in Sources */,
+				528FE960286EB6FF00EB3B61 /* RestuarantView.swift in Sources */,
+				528FE95E286EB6F600EB3B61 /* LocalBestRestaurantView.swift in Sources */,
+				528FE958286EB6E100EB3B61 /* RecomendKeywordView.swift in Sources */,
+				528FE95A286EB6E900EB3B61 /* LastSearchView.swift in Sources */,
+				528FE939286EACEA00EB3B61 /* ContentView.swift in Sources */,
+				528FE971286EB85D00EB3B61 /* Banner.swift in Sources */,
+				528FE937286EACEA00EB3B61 /* BaeminSeorinApp.swift in Sources */,
+				528FE962286EB70400EB3B61 /* MostSearchView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXSourcesBuildPhase section */
 
 /* Begin XCBuildConfiguration section */
-		522DB6062845CCB7006E605C /* Debug */ = {
+		528FE93F286EACEE00EB3B61 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
@@ -241,7 +249,7 @@
 			};
 			name = Debug;
 		};
-		522DB6072845CCB7006E605C /* Release */ = {
+		528FE940286EACEE00EB3B61 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
@@ -295,14 +303,14 @@
 			};
 			name = Release;
 		};
-		522DB6092845CCB7006E605C /* Debug */ = {
+		528FE942286EACEE00EB3B61 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
-				DEVELOPMENT_ASSET_PATHS = "\"Search_seorin/Preview Content\"";
+				DEVELOPMENT_ASSET_PATHS = "\"BaeminSeorin/Preview Content\"";
 				DEVELOPMENT_TEAM = FQJCX687Q4;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
@@ -316,7 +324,7 @@
 					"@executable_path/Frameworks",
 				);
 				MARKETING_VERSION = 1.0;
-				PRODUCT_BUNDLE_IDENTIFIER = "Seorin.Search-seorin";
+				PRODUCT_BUNDLE_IDENTIFIER = Seorin.BaeminSeorin;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
@@ -324,14 +332,14 @@
 			};
 			name = Debug;
 		};
-		522DB60A2845CCB7006E605C /* Release */ = {
+		528FE943286EACEE00EB3B61 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
-				DEVELOPMENT_ASSET_PATHS = "\"Search_seorin/Preview Content\"";
+				DEVELOPMENT_ASSET_PATHS = "\"BaeminSeorin/Preview Content\"";
 				DEVELOPMENT_TEAM = FQJCX687Q4;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
@@ -345,7 +353,7 @@
 					"@executable_path/Frameworks",
 				);
 				MARKETING_VERSION = 1.0;
-				PRODUCT_BUNDLE_IDENTIFIER = "Seorin.Search-seorin";
+				PRODUCT_BUNDLE_IDENTIFIER = Seorin.BaeminSeorin;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
@@ -356,25 +364,25 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
-		522DB5F52845CCB6006E605C /* Build configuration list for PBXProject "Search_seorin" */ = {
+		528FE92E286EACEA00EB3B61 /* Build configuration list for PBXProject "BaeminSeorin" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				522DB6062845CCB7006E605C /* Debug */,
-				522DB6072845CCB7006E605C /* Release */,
+				528FE93F286EACEE00EB3B61 /* Debug */,
+				528FE940286EACEE00EB3B61 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		522DB6082845CCB7006E605C /* Build configuration list for PBXNativeTarget "Search_seorin" */ = {
+		528FE941286EACEE00EB3B61 /* Build configuration list for PBXNativeTarget "BaeminSeorin" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				522DB6092845CCB7006E605C /* Debug */,
-				522DB60A2845CCB7006E605C /* Release */,
+				528FE942286EACEE00EB3B61 /* Debug */,
+				528FE943286EACEE00EB3B61 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
-	rootObject = 522DB5F22845CCB6006E605C /* Project object */;
+	rootObject = 528FE92B286EACEA00EB3B61 /* Project object */;
 }
