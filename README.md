@@ -65,7 +65,7 @@ CLN: (Cleanup) 코드를 정리하거나 리팩토링한 작업
 	- TabBar를  사용하여  여러개의  화면을  가질  수  있다.
 - 아쉬운점
 	- 공부와  병행하며  개발을  진행했기  때문에  개발  막바지에  깨달은  더  좋은  방법으로  보완하지  못했다.
-	- View들의  갯수가  적고  ContentView가  복잡하다.
+	- View들의  개수가  적고  ContentView가  복잡하다.
 	- AdvertiseView에서  Scroll View 가  스크롤이  되지  않은  점을  해결하지  못했다.
 	- Label들의  Frame이  이상한  부분들이  있다.
 	- LazyStack 과  LazyGrid 대신  HStack, VStack 만을  사용해서  불필요한  코드들이  있다.
